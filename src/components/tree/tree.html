@@ -1,0 +1,280 @@
+<link rel="stylesheet" href="../src/components/tree/style/index.css"/>
+
+<h2>树状控件</h2>
+
+<div class="ant-row">
+    <div class="ant-col-11">
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-body">
+
+                <p class="tit">基本</p>
+                <ul class="myCls ant-tree" role="tree-node" unselectable="true">
+                    <li class=""><span class="ant-tree-switcher ant-tree-roots_open"></span><span
+                            class="ant-tree-checkbox ant-tree-checkbox-checked"><span
+                            class="ant-tree-checkbox-inner"></span></span><a title="parent 1"><span
+                            class="ant-tree-title">parent 1</span></a>
+                        <ul class="ant-tree-child-tree ant-tree-child-tree-open">
+                            <li class="ant-tree-treenode-disabled"><span
+                                    class="ant-tree-switcher ant-tree-center_open ant-tree-switcher-disabled"></span><span
+                                    class="ant-tree-checkbox ant-tree-checkbox-checked ant-tree-checkbox-disabled"><span
+                                    class="ant-tree-checkbox-inner"></span></span><a title="parent 1-0"><span
+                                    class="ant-tree-title">parent 1-0</span></a>
+                                <ul class="ant-tree-child-tree ant-tree-child-tree-open ant-tree-line">
+                                    <li class=""><span
+                                            class="ant-tree-switcher ant-tree-switcher-noop ant-tree-center_docu"></span><span
+                                            class="ant-tree-checkbox ant-tree-checkbox-checked ant-tree-checkbox-disabled"><span
+                                            class="ant-tree-checkbox-inner"></span></span><a title="leaf"><span
+                                            class="ant-tree-title">leaf</span></a></li>
+                                    <li class=""><span
+                                            class="ant-tree-switcher ant-tree-switcher-noop ant-tree-bottom_docu"></span><span
+                                            class="ant-tree-checkbox ant-tree-checkbox-checked"><span
+                                            class="ant-tree-checkbox-inner"></span></span><a title="leaf"><span
+                                            class="ant-tree-title">leaf</span></a></li>
+                                </ul>
+                            </li>
+                            <li class=""><span class="ant-tree-switcher ant-tree-bottom_open"></span><span
+                                    class="ant-tree-checkbox ant-tree-checkbox-checked"><span
+                                    class="ant-tree-checkbox-inner"></span></span><a title="parent 1-1"
+                                                                                     class="ant-tree-node-selected"><span
+                                    class="ant-tree-title">parent 1-1</span></a>
+                                <ul class="ant-tree-child-tree ant-tree-child-tree-open">
+                                    <li class=""><span
+                                            class="ant-tree-switcher ant-tree-switcher-noop ant-tree-bottom_docu"></span><span
+                                            class="ant-tree-checkbox ant-tree-checkbox-checked"><span
+                                            class="ant-tree-checkbox-inner"></span></span><a title=""><span
+                                            class="ant-tree-title"><span
+                                            style="color: rgb(0, 136, 204);">sss</span></span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-body">
+
+                <p class="tit">拖动示例</p>
+                <ul class="ant-tree" role="tree-node" unselectable="true">
+                    <li class=""><span class="ant-tree-switcher ant-tree-noline_open"></span><a title="0-0"
+                                                                                                draggable="true"
+                                                                                                aria-grabbed="true"
+                                                                                                class="ant-tree-node-selected"><span
+                            class="ant-tree-title">0-0</span></a>
+                        <ul class="ant-tree-child-tree ant-tree-child-tree-open">
+                            <li class=""><span class="ant-tree-switcher ant-tree-noline_open"></span><a title="0-0-0"
+                                                                                                        draggable="true"
+                                                                                                        aria-grabbed="true"><span
+                                    class="ant-tree-title">0-0-0</span></a>
+                                <ul class="ant-tree-child-tree ant-tree-child-tree-open">
+                                    <li class=""><span
+                                            class="ant-tree-switcher ant-tree-switcher-noop ant-tree-noline_docu"></span><a
+                                            title="0-0-0-0" draggable="true" aria-grabbed="true"><span
+                                            class="ant-tree-title">0-0-0-0</span></a></li>
+                                    <li class=""><span
+                                            class="ant-tree-switcher ant-tree-switcher-noop ant-tree-noline_docu"></span><a
+                                            title="0-0-0-1" draggable="true" aria-grabbed="true"><span
+                                            class="ant-tree-title">0-0-0-1</span></a></li>
+                                    <li class=""><span
+                                            class="ant-tree-switcher ant-tree-switcher-noop ant-tree-noline_docu"></span><a
+                                            title="0-0-0-2" draggable="true" aria-grabbed="true"><span
+                                            class="ant-tree-title">0-0-0-2</span></a></li>
+                                </ul>
+                            </li>
+                            <li class=""><span class="ant-tree-switcher ant-tree-noline_close"></span><a title="0-0-1"
+                                                                                                         draggable="true"
+                                                                                                         aria-grabbed="true"><span
+                                    class="ant-tree-title">0-0-1</span></a></li>
+                            <li class=""><span
+                                    class="ant-tree-switcher ant-tree-switcher-noop ant-tree-noline_docu"></span><a
+                                    title="0-0-2" draggable="true" aria-grabbed="true"><span class="ant-tree-title">0-0-2</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=""><span class="ant-tree-switcher ant-tree-noline_open"></span><a title="0-1"
+                                                                                                draggable="true"
+                                                                                                aria-grabbed="true"><span
+                            class="ant-tree-title">0-1</span></a>
+                        <ul class="ant-tree-child-tree ant-tree-child-tree-open">
+                            <li class=""><span class="ant-tree-switcher ant-tree-noline_open"></span><a title="0-1-0"
+                                                                                                        draggable="true"
+                                                                                                        aria-grabbed="true"><span
+                                    class="ant-tree-title">0-1-0</span></a>
+                                <ul class="ant-tree-child-tree ant-tree-child-tree-open">
+                                    <li class=""><span
+                                            class="ant-tree-switcher ant-tree-switcher-noop ant-tree-noline_docu"></span><a
+                                            title="0-1-0-0" draggable="true" aria-grabbed="true"><span
+                                            class="ant-tree-title">0-1-0-0</span></a></li>
+                                    <li class=""><span
+                                            class="ant-tree-switcher ant-tree-switcher-noop ant-tree-noline_docu"></span><a
+                                            title="0-1-0-1" draggable="true" aria-grabbed="true"><span
+                                            class="ant-tree-title">0-1-0-1</span></a></li>
+                                    <li class=""><span
+                                            class="ant-tree-switcher ant-tree-switcher-noop ant-tree-noline_docu"></span><a
+                                            title="0-1-0-2" draggable="true" aria-grabbed="true"><span
+                                            class="ant-tree-title">0-1-0-2</span></a></li>
+                                </ul>
+                            </li>
+                            <li class=""><span class="ant-tree-switcher ant-tree-noline_open"></span><a title="0-1-1"
+                                                                                                        draggable="true"
+                                                                                                        aria-grabbed="true"><span
+                                    class="ant-tree-title">0-1-1</span></a>
+                                <ul class="ant-tree-child-tree ant-tree-child-tree-open">
+                                    <li class=""><span
+                                            class="ant-tree-switcher ant-tree-switcher-noop ant-tree-noline_docu"></span><a
+                                            title="0-1-1-0" draggable="true" aria-grabbed="true"><span
+                                            class="ant-tree-title">0-1-1-0</span></a></li>
+                                    <li class=""><span
+                                            class="ant-tree-switcher ant-tree-switcher-noop ant-tree-noline_docu"></span><a
+                                            title="0-1-1-1" draggable="true" aria-grabbed="true"><span
+                                            class="ant-tree-title">0-1-1-1</span></a></li>
+                                    <li class=""><span
+                                            class="ant-tree-switcher ant-tree-switcher-noop ant-tree-noline_docu"></span><a
+                                            title="0-1-1-2" draggable="true" aria-grabbed="true"><span
+                                            class="ant-tree-title">0-1-1-2</span></a></li>
+                                </ul>
+                            </li>
+                            <li class=""><span
+                                    class="ant-tree-switcher ant-tree-switcher-noop ant-tree-noline_docu"></span><a
+                                    title="0-1-2" draggable="true" aria-grabbed="true"><span class="ant-tree-title">0-1-2</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=""><span class="ant-tree-switcher ant-tree-switcher-noop ant-tree-noline_docu"></span><a
+                            title="0-2" draggable="true" aria-grabbed="true"><span class="ant-tree-title">0-2</span></a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="ant-col-11 ant-col-offset-2">
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-body">
+
+                <p class="tit">受控操作示例</p>
+                <ul class="ant-tree" role="tree-node" unselectable="true">
+                    <li class=""><span class="ant-tree-switcher ant-tree-noline_open"></span><span
+                            class="ant-tree-checkbox ant-tree-checkbox-indeterminate"><span
+                            class="ant-tree-checkbox-inner"></span></span><a title="0-0"><span class="ant-tree-title">0-0</span></a>
+                        <ul class="ant-tree-child-tree ant-tree-child-tree-open">
+                            <li class=""><span class="ant-tree-switcher ant-tree-noline_open"></span><span
+                                    class="ant-tree-checkbox ant-tree-checkbox-checked ant-tree-checkbox-disabled"><span
+                                    class="ant-tree-checkbox-inner"></span></span><a title="0-0-0"><span
+                                    class="ant-tree-title">0-0-0</span></a>
+                                <ul class="ant-tree-child-tree ant-tree-child-tree-open">
+                                    <li class=""><span
+                                            class="ant-tree-switcher ant-tree-switcher-noop ant-tree-noline_docu"></span><span
+                                            class="ant-tree-checkbox ant-tree-checkbox-checked"><span
+                                            class="ant-tree-checkbox-inner"></span></span><a title="0-0-0-0"><span
+                                            class="ant-tree-title">0-0-0-0</span></a></li>
+                                    <li class=""><span
+                                            class="ant-tree-switcher ant-tree-switcher-noop ant-tree-noline_docu"></span><span
+                                            class="ant-tree-checkbox ant-tree-checkbox-checked"><span
+                                            class="ant-tree-checkbox-inner"></span></span><a title="0-0-0-1"><span
+                                            class="ant-tree-title">0-0-0-1</span></a></li>
+                                    <li class=""><span
+                                            class="ant-tree-switcher ant-tree-switcher-noop ant-tree-noline_docu"></span><span
+                                            class="ant-tree-checkbox ant-tree-checkbox-checked"><span
+                                            class="ant-tree-checkbox-inner"></span></span><a title="0-0-0-2"><span
+                                            class="ant-tree-title">0-0-0-2</span></a></li>
+                                </ul>
+                            </li>
+                            <li class=""><span class="ant-tree-switcher ant-tree-noline_open"></span><span
+                                    class="ant-tree-checkbox"><span class="ant-tree-checkbox-inner"></span></span><a
+                                    title="0-0-1"><span class="ant-tree-title">0-0-1</span></a>
+                                <ul class="ant-tree-child-tree ant-tree-child-tree-open">
+                                    <li class=""><span
+                                            class="ant-tree-switcher ant-tree-switcher-noop ant-tree-noline_docu"></span><span
+                                            class="ant-tree-checkbox"><span
+                                            class="ant-tree-checkbox-inner"></span></span><a title="0-0-1-0"><span
+                                            class="ant-tree-title">0-0-1-0</span></a></li>
+                                    <li class=""><span
+                                            class="ant-tree-switcher ant-tree-switcher-noop ant-tree-noline_docu"></span><span
+                                            class="ant-tree-checkbox"><span
+                                            class="ant-tree-checkbox-inner"></span></span><a title="0-0-1-1"><span
+                                            class="ant-tree-title">0-0-1-1</span></a></li>
+                                    <li class=""><span
+                                            class="ant-tree-switcher ant-tree-switcher-noop ant-tree-noline_docu"></span><span
+                                            class="ant-tree-checkbox"><span
+                                            class="ant-tree-checkbox-inner"></span></span><a title="0-0-1-2"><span
+                                            class="ant-tree-title">0-0-1-2</span></a></li>
+                                </ul>
+                            </li>
+                            <li class=""><span
+                                    class="ant-tree-switcher ant-tree-switcher-noop ant-tree-noline_docu"></span><span
+                                    class="ant-tree-checkbox"><span class="ant-tree-checkbox-inner"></span></span><a
+                                    title="0-0-2"><span class="ant-tree-title">0-0-2</span></a></li>
+                        </ul>
+                    </li>
+                    <li class=""><span class="ant-tree-switcher ant-tree-noline_close"></span><span
+                            class="ant-tree-checkbox"><span class="ant-tree-checkbox-inner"></span></span><a
+                            title="0-1"><span class="ant-tree-title">0-1</span></a></li>
+                    <li class=""><span
+                            class="ant-tree-switcher ant-tree-switcher-noop ant-tree-noline_docu"></span><span
+                            class="ant-tree-checkbox"><span class="ant-tree-checkbox-inner"></span></span><a
+                            title="0-2"><span class="ant-tree-title">0-2</span></a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-body">
+
+                <p class="tit">异步数据加载</p>
+                <ul class="ant-tree" role="tree-node" unselectable="true">
+                    <li class=""><span class="ant-tree-switcher ant-tree-noline_open"></span><a title="pNode 01"><span
+                            class="ant-tree-title">pNode 01</span></a>
+                        <ul class="ant-tree-child-tree ant-tree-child-tree-open">
+                            <li class="ant-tree-treenode-disabled"><span
+                                    class="ant-tree-switcher ant-tree-noline_close ant-tree-switcher-disabled"></span><a
+                                    title="leaf 0-0-0"><span class="ant-tree-title">leaf 0-0-0</span></a></li>
+                            <li class=""><span class="ant-tree-switcher ant-tree-noline_open"></span><a
+                                    title="leaf 0-0-1"><span class="ant-tree-title">leaf 0-0-1</span></a>
+                                <ul class="ant-tree-child-tree ant-tree-child-tree-open">
+                                    <li class=""><span
+                                            class="ant-tree-switcher ant-tree-switcher-noop ant-tree-noline_docu"></span><a
+                                            title="leaf 0-0-1-0"><span class="ant-tree-title">leaf 0-0-1-0</span></a>
+                                    </li>
+                                    <li class=""><span
+                                            class="ant-tree-switcher ant-tree-switcher-noop ant-tree-noline_docu"></span><a
+                                            title="leaf 0-0-1-1"><span class="ant-tree-title">leaf 0-0-1-1</span></a>
+                                    </li>
+                                    <li class=""><span
+                                            class="ant-tree-switcher ant-tree-switcher-noop ant-tree-noline_docu"></span><a
+                                            title="leaf 0-0-1-2"><span class="ant-tree-title">leaf 0-0-1-2</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class=""><span class="ant-tree-switcher ant-tree-noline_close"></span><a
+                                    title="leaf 0-0-2"><span class="ant-tree-title">leaf 0-0-2</span></a></li>
+                        </ul>
+                    </li>
+                    <li class=""><span class="ant-tree-switcher ant-tree-noline_open"></span><a title="pNode 02"><span
+                            class="ant-tree-title">pNode 02</span></a>
+                        <ul class="ant-tree-child-tree ant-tree-child-tree-open">
+                            <li class=""><span class="ant-tree-switcher ant-tree-noline_close"></span><a
+                                    title="leaf 0-1-0"><span class="ant-tree-title">leaf 0-1-0</span></a></li>
+                            <li class=""><span class="ant-tree-switcher ant-tree-noline_close"></span><a
+                                    title="leaf 0-1-1"><span class="ant-tree-title">leaf 0-1-1</span></a></li>
+                            <li class=""><span class="ant-tree-switcher ant-tree-noline_close"></span><a
+                                    title="leaf 0-1-2"><span class="ant-tree-title">leaf 0-1-2</span></a></li>
+                        </ul>
+                    </li>
+                    <li class=""><span class="ant-tree-switcher ant-tree-switcher-noop ant-tree-noline_docu"></span><a
+                            title="pNode 03"><span class="ant-tree-title">pNode 03</span></a></li>
+                </ul>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>

@@ -1,0 +1,345 @@
+<link rel="stylesheet" href="../src/components/select/style/index.css"/>
+<link rel="stylesheet" href="../src/components/input/style/index.css"/>
+<link rel="stylesheet" href="../src/components/button/style/index.css"/>
+
+<h2>select 选择器</h2>
+<h3>依赖</h3>
+<p class="describe">样式依赖input 和 button 的样式</p>
+<div class="ant-row">
+    <div class="ant-col-11">
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-head"><h4 class="ant-card-head-title">平行排列</h4></div>
+            <div class="ant-card-extra"><a href="#">More</a></div>
+            <div class="ant-card-body">
+                <p class="tit">基本使用</p>
+                <div>
+                    <div class="ant-select ant-select-enabled" style="width: 120px;">
+                        <div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true"
+                             aria-expanded="false" tabindex="0">
+                            <div class="ant-select-selection__rendered">
+                                <div class="ant-select-selection-selected-value" style="display: block; opacity: 1;">
+                                    Lucy
+                                </div>
+                            </div>
+                    <span class="ant-select-arrow" unselectable="unselectable"
+                          style="-webkit-user-select: none;"><b></b></span></div>
+                    </div>
+                    <div class="ant-select ant-select-open ant-select-focused ant-select-enabled" style="width: 120px;">
+                        <div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true"
+                             aria-expanded="false" tabindex="0">
+                            <div class="ant-select-selection__rendered">
+                                <div class="ant-select-selection-selected-value" style="display: block; opacity: 1;">
+                                    选中状态
+                                </div>
+                            </div>
+                    <span class="ant-select-arrow" unselectable="unselectable"
+                          style="-webkit-user-select: none;"><b></b></span></div>
+                    </div>
+                    <div class="ant-select ant-select-disabled ant-select-allow-clear" style="width: 120px;">
+                        <div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true"
+                             aria-expanded="false" tabindex="0">
+                            <div class="ant-select-selection__rendered">
+                                <div class="ant-select-selection-selected-value" style="display: block; opacity: 1;">
+                                    Lucy
+                                </div>
+                            </div>
+                    <span unselectable="unselectable" class="ant-select-selection__clear"
+                          style="-webkit-user-select: none; display: block;"></span><span class="ant-select-arrow"
+                                                                                          unselectable="unselectable"
+                                                                                          style="-webkit-user-select: none;"><b></b></span>
+                        </div>
+                    </div>
+                </div>
+                <p class="tit">带搜索框</p>
+                <div class="ant-select-show-search ant-select ant-select-enabled" style="width: 180px;">
+                    <div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true"
+                         aria-expanded="false" tabindex="0">
+                        <div class="ant-select-selection__rendered">
+                            <div unselectable="unselectable" class="ant-select-selection__placeholder"
+                                 style="display: none; -webkit-user-select: none;">请选择人员
+                            </div>
+                            <div class="ant-select-selection-selected-value" style="display: block; opacity: 1;">露西
+                            </div>
+                            <div class="ant-select-search ant-select-search--inline" style="display: none;">
+                                <div class="ant-select-search__field__wrap"><input value="sahbi
+             " class="ant-select-search__field"><span class="ant-select-search__field__mirror"></span></div>
+                            </div>
+                        </div>
+                <span class="ant-select-arrow" unselectable="unselectable"
+                      style="-webkit-user-select: none;"><b></b></span></div>
+                </div>
+
+                <div class="ant-select-show-search ant-select ant-select-open ant-select-focused ant-select-enabled"
+                     style="width: 180px;">
+                    <div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true"
+                         aria-expanded="false" tabindex="0">
+                        <div class="ant-select-selection__rendered">
+                            <div unselectable="unselectable" class="ant-select-selection__placeholder"
+                                 style="display: none; -webkit-user-select: none;">请选择人员
+                            </div>
+                            <div class="ant-select-selection-selected-value" style="display: block; opacity: .4;">露西
+                            </div>
+                            <div class="ant-select-search ant-select-search--inline" style="display: block;">
+                                <div class="ant-select-search__field__wrap"><input
+                                        class="ant-select-search__field"><span
+                                        class="ant-select-search__field__mirror"></span></div>
+                            </div>
+                        </div>
+                <span class="ant-select-arrow" unselectable="unselectable"
+                      style="-webkit-user-select: none;"><b></b></span></div>
+                </div>
+                <p class="tit">标签</p>
+                <div class="ant-select ant-select-enabled" style="width: 100%;">
+                    <div class="ant-select-selection
+            ant-select-selection--multiple" role="combobox" aria-autocomplete="list" aria-haspopup="true"
+                         aria-expanded="false">
+                        <div class="ant-select-selection__rendered">
+                            <ul>
+                                <li unselectable="unselectable" class="ant-select-selection__choice" title="g16"
+                                    style="-webkit-user-select: none;">
+                                    <div class="ant-select-selection__choice__content">g16</div>
+                                    <span class="ant-select-selection__choice__remove"></span></li>
+                                <li class="ant-select-search ant-select-search--inline">
+                                    <div class="ant-select-search__field__wrap"><input class="ant-select-search__field"
+                                                                                       style="border: 1px solid red; width: .75em;"><span
+                                            class="ant-select-search__field__mirror">这里同步input的输入内容不知道何用！</span></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="code-box">
+                <div class="code-box-title"><a href="#components-button-demo-basic">选择框</a></div>
+                <span>各种各样的选择框</span>
+                <span class="collapse anticon anticon-circle-o-right" unselectable="none"></span>
+            </div>
+            <div class="code-body">
+                这里是样例代码
+            </div>
+        </div>
+
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-body">
+                <div class="ant-select ant-select-enabled" style="width: 200px;">
+                    <div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true"
+                         aria-expanded="false" tabindex="0">
+                        <div class="ant-select-selection__rendered">
+                            <div class="ant-select-selection-selected-value" style="display: block; opacity: 1;">lucy
+                            </div>
+                        </div>
+                        <span class="ant-select-arrow" unselectable="unselectable"
+                              style="-webkit-user-select: none;"><b></b></span></div>
+                </div>
+            </div>
+            <div class="code-box">
+                <div class="code-box-title"><a href="#components-button-demo-basic">样例类型</a></div>
+                <span>分组</span>
+                <span class="collapse anticon anticon-circle-o-right" unselectable="none"></span>
+            </div>
+            <div class="code-body">
+                这里是样例代码<
+            </div>
+        </div>
+    </div>
+    <div class="ant-col-11 ant-col-offset-2">
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-body">
+                <div>
+                    <div class="ant-select-lg ant-select ant-select-enabled" style="width: 200px;">
+                        <div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true"
+                             aria-expanded="false" tabindex="0">
+                            <div class="ant-select-selection__rendered">
+                                <div class="ant-select-selection-selected-value" style="display: block; opacity: 1;">
+                                    Lucy
+                                </div>
+                            </div>
+                            <span class="ant-select-arrow" unselectable="unselectable"
+                                  style="-webkit-user-select: none;"><b></b></span></div>
+                    </div>
+                    <hr class="space"/>
+
+                    <div class="ant-select ant-select-enabled" style="width: 200px;">
+                        <div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true"
+                             aria-expanded="false" tabindex="0">
+                            <div class="ant-select-selection__rendered">
+                                <div class="ant-select-selection-selected-value" style="display: block; opacity: 1;">
+                                    Lucy
+                                </div>
+                            </div>
+                            <span class="ant-select-arrow" unselectable="unselectable"
+                                  style="-webkit-user-select: none;"><b></b></span></div>
+                    </div>
+                    <hr class="space"/>
+
+                    <div class="ant-select-sm ant-select ant-select-enabled" style="width: 200px;">
+                        <div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true"
+                             aria-expanded="false" tabindex="0">
+                            <div class="ant-select-selection__rendered">
+                                <div class="ant-select-selection-selected-value" style="display: block; opacity: 1;">
+                                    Lucy
+                                </div>
+                            </div>
+                            <span class="ant-select-arrow" unselectable="unselectable"
+                                  style="-webkit-user-select: none;"><b></b></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="code-box">
+                <div class="code-box-title"><a href="#components-button-demo-basic">大中小</a></div>
+                <span>选择框尺寸</span>
+                <span class="collapse anticon anticon-circle-o-right" unselectable="none"></span>
+            </div>
+            <div class="code-body">
+                这里是样例代码<
+            </div>
+        </div>
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-body">
+                <p class="tit">未填写内容</p>
+                <div class="ant-search-input-wrapper" style="width: 200px; "><span
+                        class="ant-input-group ant-search-input"><div
+                        class="ant-select ant-select-combobox ant-select-enabled"><div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true"
+                                                                                       aria-expanded="false"><div
+                        class="ant-select-selection__rendered"><div unselectable="unselectable"
+                                                                    class="ant-select-selection__placeholder"
+                                                                    style="display: none; -webkit-user-select: none;">input search text</div><ul><li
+                        class="ant-select-search ant-select-search--inline"><div class="ant-select-search__field__wrap"><input
+                        class="ant-select-search__field"><span
+                        class="ant-select-search__field__mirror">j</span></div></li></ul></div></div></div><div
+                        class="ant-input-group-wrap"><button type="button"
+                                                             class="ant-btn ant-search-btn"><i
+                        class="anticon anticon-search"></i></button></div></span></div>
+                <p class="tit">填写内容后</p>
+                <div class="ant-search-input-wrapper" style="width: 200px; "><span
+                        class="ant-input-group ant-search-input"><div
+                        class="ant-select ant-select-combobox ant-select-enabled"><div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true"
+                                                                                       aria-expanded="false"><div
+                        class="ant-select-selection__rendered"><div unselectable="unselectable"
+                                                                    class="ant-select-selection__placeholder"
+                                                                    style="display: none; -webkit-user-select: none;">input search text</div><ul><li
+                        class="ant-select-search ant-select-search--inline"><div class="ant-select-search__field__wrap"><input
+                        class="ant-select-search__field"><span
+                        class="ant-select-search__field__mirror">j</span></div></li></ul></div></div></div><div
+                        class="ant-input-group-wrap"><button type="button"
+                                                             class="ant-btn ant-search-btn ant-search-btn-noempty"><i
+                        class="anticon anticon-search"></i></button></div></span></div>
+            </div>
+            <div class="code-box">
+                <div class="code-box-title"><a href="#components-button-demo-basic">样例类型</a></div>
+                <span>搜索框</span>
+                <span class="collapse anticon anticon-circle-o-right" unselectable="none"></span>
+            </div>
+            <div class="code-body">
+                这里是样例代码<
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--ant-select-dropdown-hidden  隐藏 -->
+<div class="ant-select-dropdown ant-select-dropdown--single ant-select-dropdown-placement-bottomLeft"
+     style=" left: 407.641px;top: 214.563px;width: 120px;">
+    <div style="overflow: auto;">
+        <ul class="ant-select-dropdown-menu ant-select-dropdown-menu-vertical  ant-select-dropdown-menu-root"
+            role="menu" aria-activedescendant="">
+            <li unselectable="unselectable" class="ant-select-dropdown-menu-item" role="menuitem"
+                aria-selected="false"
+                style="-webkit-user-select: none;">Jack
+            </li>
+            <li unselectable="unselectable"
+                class="ant-select-dropdown-menu-item-selected ant-select-dropdown-menu-item"
+                role="menuitem" aria-selected="true" style="-webkit-user-select: none;">Lucy
+            </li>
+            <li unselectable="unselectable"
+                class="ant-select-dropdown-menu-item-disabled ant-select-dropdown-menu-item"
+                role="menuitem" aria-selected="false" aria-disabled="true" style="-webkit-user-select: none;">
+                Disabled
+            </li>
+            <li unselectable="unselectable" class="ant-select-dropdown-menu-item" role="menuitem"
+                aria-selected="false"
+                style="-webkit-user-select: none;">yiminghe
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="ant-select-dropdown ant-select-dropdown--single ant-select-dropdown-placement-bottomLeft"
+     style="left: 285.922px;top: 727.56px; width: 200px;">
+    <div style="overflow: auto;">
+        <ul class="ant-select-dropdown-menu ant-select-dropdown-menu-vertical  ant-select-dropdown-menu-root"
+            role="menu" aria-activedescendant="">
+            <li class=" ant-select-dropdown-menu-item-group">
+                <div class="ant-select-dropdown-menu-item-group-title">Manager</div>
+                <ul class="ant-select-dropdown-menu-item-group-list">
+                    <li unselectable="unselectable" class="ant-select-dropdown-menu-item" role="menuitem"
+                        aria-selected="false" style="-webkit-user-select: none;">jack
+                    </li>
+                    <li unselectable="unselectable"
+                        class="ant-select-dropdown-menu-item-selected ant-select-dropdown-menu-item" role="menuitem"
+                        aria-selected="true" style="-webkit-user-select: none;">lucy
+                    </li>
+                </ul>
+            </li>
+            <li class=" ant-select-dropdown-menu-item-group">
+                <div class="ant-select-dropdown-menu-item-group-title">Engineer</div>
+                <ul class="ant-select-dropdown-menu-item-group-list">
+                    <li unselectable="unselectable" class="ant-select-dropdown-menu-item" role="menuitem"
+                        aria-selected="false" style="-webkit-user-select: none;">yiminghe
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="ant-select-dropdown ant-select-dropdown--single ant-select-dropdown-placement-bottomLeft"
+     style="    left: 1153px;top: 725px;width: 200px;">
+    <div style="overflow: auto;">
+        <ul class="ant-select-dropdown-menu ant-select-dropdown-menu-vertical  ant-select-dropdown-menu-root"
+            role="menu" aria-activedescendant="">
+            <li unselectable="unselectable" class="ant-select-dropdown-menu-item" role="menuitem" aria-selected="false"
+                style="-webkit-user-select: none;">1qb
+            </li>
+            <li unselectable="unselectable" class="ant-select-dropdown-menu-item" role="menuitem" aria-selected="false"
+                style="-webkit-user-select: none;">10q币
+            </li>
+            <li unselectable="unselectable" class="ant-select-dropdown-menu-item" role="menuitem" aria-selected="false"
+                style="-webkit-user-select: none;">10qb
+            </li>
+            <li unselectable="unselectable" class="ant-select-dropdown-menu-item" role="menuitem" aria-selected="false"
+                style="-webkit-user-select: none;">100q币
+            </li>
+            <li unselectable="unselectable" class="ant-select-dropdown-menu-item" role="menuitem" aria-selected="false"
+                style="-webkit-user-select: none;">18650锂电池
+            </li>
+            <li unselectable="unselectable" class="ant-select-dropdown-menu-item" role="menuitem" aria-selected="false"
+                style="-webkit-user-select: none;">1q币
+            </li>
+            <li unselectable="unselectable" class="ant-select-dropdown-menu-item" role="menuitem" aria-selected="false"
+                style="-webkit-user-select: none;">11
+            </li>
+            <li unselectable="unselectable" class="ant-select-dropdown-menu-item" role="menuitem" aria-selected="false"
+                style="-webkit-user-select: none;">100qb
+            </li>
+            <li unselectable="unselectable" class="ant-select-dropdown-menu-item" role="menuitem" aria-selected="false"
+                style="-webkit-user-select: none;">12vled灯
+            </li>
+            <li unselectable="unselectable" class="ant-select-dropdown-menu-item" role="menuitem" aria-selected="false"
+                style="-webkit-user-select: none;">16g内存卡
+            </li>
+        </ul>
+    </div>
+</div>

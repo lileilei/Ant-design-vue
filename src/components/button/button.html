@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>button按钮</title>
+    <link rel="stylesheet" href="../src/components/button/style/index.css"/>
+    <style>
+        .ant-btn {
+            margin-right: 8px;
+            margin-bottom: 12px;
+        }
+    </style>
+    <script>
+        Vue.component('v-button', Vue.extend({
+            template:'<button><slot></slot></button>'
+        }))
+    </script>
+</head>
+<body>
+<h2>Button按钮</h2>
+<div class="ant-row">
+    <div class="ant-col-11">
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-head"><h4 class="ant-card-head-title">按钮类型</h4></div>
+            <div class="ant-card-extra"><a href="#">More</a></div>
+            <div class="ant-card-body">
+                <div>
+                    <button type="button" class="ant-btn ant-btn-primary"><span>Primary</span></button>
+                    <button disabled="" type="button" class="ant-btn ant-btn-primary"><span>Primary(disabled)</span>
+                    </button>
+                    <br>
+                    <button type="button" class="ant-btn"><span>Default</span></button>
+                    <button disabled="" type="button" class="ant-btn"><span>Default(disabled)</span></button>
+                    <br>
+                    <button type="button" class="ant-btn ant-btn-ghost"><span>Ghost</span></button>
+                    <button disabled="" type="button" class="ant-btn ant-btn-ghost"><span>Ghost(disabled)</span>
+                    </button>
+                    <br>
+                    <button type="button" class="ant-btn ant-btn-dashed"><span>Dashed</span></button>
+                    <button disabled="" type="button" class="ant-btn ant-btn-dashed"><span>Dashed(disabled)</span>
+                    </button>
+                </div>
+                <div>
+                    <button type="button" class="ant-btn ant-btn-primary ant-btn-loading"><i
+                            class=" anticon anticon-loading"></i><span>Loading</span></button>
+                    <button type="button" class="ant-btn ant-btn-primary ant-btn-sm ant-btn-loading"><i
+                            class=" anticon anticon-loading"></i><span>Loading</span></button>
+                    <br>
+                    <button type="button" class="ant-btn ant-btn-primary"><span>Click me!</span></button>
+                    <button type="button" class="ant-btn ant-btn-primary"><i
+                            class=" anticon anticon-poweroff"></i><span>Click me!</span></button>
+                </div>
+            </div>
+            <div class="code-box">
+                <div class="code-box-title"><a href="#components-button-demo-basic">按钮类型</a></div>
+                <span>按钮样式代码</span>
+                <span class="collapse anticon anticon-circle-o-right" unselectable="none"></span>
+            </div>
+            <div class="code-body">
+                <span>&lt;button type="button" class="ant-btn ant-btn-primary"&gt;&lt;span&gt;Primary&lt;/span&gt;&lt;/button&gt;</span>
+                <span>&lt;button type="button" class="ant-btn"&gt;&lt;span&gt;Default&lt;/span&gt;&lt;/button&gt;</span>
+                <span>&lt;button type="button" class="ant-btn ant-btn-ghost"&gt;&lt;span&gt;Ghost&lt;/span&gt;&lt;/button&gt;</span>
+                <span>&lt;button type="button" class="ant-btn ant-btn-dashed"&gt;&lt;span&gt;Dashed&lt;/span&gt;&lt;/button&gt;</span>
+            </div>
+        </div>
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-head"><h4 class="ant-card-head-title">图标按钮</h4></div>
+            <div class="ant-card-extra"><a href="#">More</a></div>
+            <div class="ant-card-body">
+                <div>
+                    <button type="button" class="ant-btn ant-btn-primary ant-btn-circle ant-btn-icon-only"><i
+                            class=" anticon anticon-search"></i></button>
+                    <button type="button" class="ant-btn ant-btn-primary"><i class=" anticon anticon-search"></i><span>搜 索</span>
+                    </button>
+                    <button type="button" class="ant-btn ant-btn-ghost ant-btn-circle-outline ant-btn-icon-only"><i
+                            class=" anticon anticon-search"></i></button>
+                    <button type="button" class="ant-btn ant-btn-ghost"><i class=" anticon anticon-search"></i><span>Search</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ant-col-11 ant-col-offset-2">
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-head"><h4 class="ant-card-head-title">按钮大小</h4></div>
+            <div class="ant-card-extra"><a href="#">More</a></div>
+            <div class="ant-card-body">
+                <button type="button" class="ant-btn ant-btn-primary ant-btn-lg"><span>Large</span></button>
+                <button type="button" class="ant-btn ant-btn-primary"><span>Default</span></button>
+                <button type="button" class="ant-btn ant-btn-primary ant-btn-sm"><span>Small</span></button>
+            </div>
+        </div>
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-head"><h4 class="ant-card-head-title">按钮组合</h4></div>
+            <div class="ant-card-extra"><a href="#">More</a></div>
+            <div class="ant-card-body">
+                <div><h4>Basic</h4>
+                    <div class="ant-btn-group">
+                        <button type="button" class="ant-btn"><span>Cancel</span></button>
+                        <button type="button" class="ant-btn ant-btn-primary"><span>OK</span></button>
+                    </div>
+                    <div class="ant-btn-group">
+                        <button disabled="" type="button" class="ant-btn"><span>L</span></button>
+                        <button disabled="" type="button" class="ant-btn"><span>M</span></button>
+                        <button disabled="" type="button" class="ant-btn"><span>R</span></button>
+                    </div>
+                    <div class="ant-btn-group">
+                        <button type="button" class="ant-btn ant-btn-primary"><span>L</span></button>
+                        <button type="button" class="ant-btn"><span>M</span></button>
+                        <button type="button" class="ant-btn ant-btn-ghost"><span>M</span></button>
+                        <button type="button" class="ant-btn ant-btn-dashed"><span>R</span></button>
+                    </div>
+                    <h4>With Icon</h4>
+                    <div class="ant-btn-group">
+                        <button type="button" class="ant-btn ant-btn-primary"><i
+                                class=" anticon anticon-left"></i><span>Go back</span></button>
+                        <button type="button" class="ant-btn ant-btn-primary"><span>Go forward</span><i
+                                class=" anticon anticon-right"></i></button>
+                    </div>
+                    <div class="ant-btn-group">
+                        <button type="button" class="ant-btn ant-btn-primary ant-btn-icon-only"><i
+                                class=" anticon anticon-cloud"></i></button>
+                        <button type="button" class="ant-btn ant-btn-primary ant-btn-icon-only"><i
+                                class=" anticon anticon-cloud-download"></i></button>
+                    </div>
+                    <h4>Size</h4>
+                    <div class="ant-btn-group ant-btn-group-lg">
+                        <button type="button" class="ant-btn ant-btn-ghost"><span>Large</span></button>
+                        <button type="button" class="ant-btn ant-btn-ghost"><span>Large</span></button>
+                    </div>
+                    <div class="ant-btn-group">
+                        <button type="button" class="ant-btn ant-btn-ghost"><span>Default</span></button>
+                        <button type="button" class="ant-btn ant-btn-ghost"><span>Default</span></button>
+                    </div>
+                    <div class="ant-btn-group ant-btn-group-sm">
+                        <button type="button" class="ant-btn ant-btn-ghost"><span>Small</span></button>
+                        <button type="button" class="ant-btn ant-btn-ghost"><span>Small</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="example">
+    <v-button  v-on:click="greet">hello</v-button>
+</div>
+</body>
+<script>
+    new Vue({
+        el: '#example',
+        data: {
+            name: 'Vue.js'
+        },
+        methods: {
+            greet: function (event) {
+                // 方法内 `this` 指向 vm
+                alert('Hello ' + this.name + '!')
+                // `event` 是原生 DOM 事件
+                alert(event.target.tagName)
+            }
+        }
+    })
+</script>
+</html>

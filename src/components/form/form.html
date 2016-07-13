@@ -1,0 +1,110 @@
+<link rel="stylesheet" href="../src/components/input/style/index.css"/>
+<link rel="stylesheet" href="../src/components/button/style/index.css"/>
+<link rel="stylesheet" href="../src/components/checkbox/style/index.css"/>
+<link rel="stylesheet" href="../src/components/radio/style/index.css"/>
+<link rel="stylesheet" href="../src/components/form/style/index.css"/>
+
+<h2>表单</h2>
+
+<h3>样式依赖</h3>
+<p class="describe">依赖input样式，checkbox样式，radio样式，button样式</p>
+<div class="ant-card ant-card-bordered" >
+    <div class="ant-card-head"><h4 class="ant-card-head-title">平行排列</h4></div>
+    <div class="ant-card-extra"><a href="#">More</a></div>
+    <div class="ant-card-body">
+        <form class="ant-form-inline">
+            <div class="ant-form-item"><label for="userName" class="">账户</label>
+                <div class="">
+                    <div class="ant-form-item-control ">
+                        <span class="ant-input-wrapper">
+                            <input type="text" placeholder="请输入账户名"
+                                   id="userName"
+                                   class="ant-input ant-input-lg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="ant-form-item"><label for="password" class="">密码</label>
+                <div class="">
+                    <div class="ant-form-item-control ">
+                        <span class="ant-input-wrapper">
+                            <input type="password"
+                                   placeholder="请输入密码"
+                                   id="password"
+                                   class="ant-input ant-input-lg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="ant-form-item">
+                <div class="">
+                    <div class="ant-form-item-control "><label class="ant-checkbox-wrapper">
+                        <span class="ant-checkbox"><span class="ant-checkbox-inner"></span>
+                            <input type="checkbox" class="ant-checkbox-input"></span><span>记住我</span></label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="ant-btn ant-btn-primary"><span>登 录</span></button>
+        </form>
+    </div>
+</div>
+
+<div class="ant-card ant-card-bordered">
+    <div class="ant-card-head"><h4 class="ant-card-head-title">平行排列</h4></div>
+    <div class="ant-card-extra"><a href="#">More</a></div>
+    <div class="ant-card-body">
+        <form class="ant-form-horizontal">
+            <div class="ant-form-item"><label class="ant-col-6">用户名</label>
+                <div class="ant-col-14">
+                    <div class="ant-form-item-control "><p class="ant-form-text" id="userName" name="userName">大眼萌
+                        minion</p></div>
+                </div>
+            </div>
+            <div class="ant-form-item"><label for="pass" class="ant-col-6">密码</label>
+                <div class="ant-col-14">
+                    <div class="ant-form-item-control "><span class="ant-input-wrapper"><input type="password" id="pass"
+                                                                                               placeholder="请输入密码"
+                                                                                               class="ant-input ant-input-lg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="ant-form-item"><label for="gender" class="ant-col-6">您的性别</label>
+                <div class="ant-col-14">
+                    <div class="ant-form-item-control ">
+                        <div class="ant-radio-group ant-radio-group-large"><label class="ant-radio-wrapper"><span
+                                class="ant-radio"><span class="ant-radio-inner"></span><input type="radio"
+                                                                                              class="ant-radio-input"></span><span>男的</span></label><label
+                                class="ant-radio-wrapper ant-radio-wrapper-checked"><span
+                                class="ant-radio ant-radio-checked ant-radio ant-radio-checked ant-radio-checked-1"><span
+                                class="ant-radio-inner"></span><input type="radio" class="ant-radio-input"></span><span>女的</span></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ant-form-item ant-form-item-with-help"><label for="remark" class="ant-col-6">备注</label>
+                <div class="ant-col-14">
+                    <div class="ant-form-item-control "><span class="ant-input-wrapper"><textarea type="textarea"
+                                                                                                  placeholder="随便写"
+                                                                                                  id="remark"
+                                                                                                  class="ant-input ant-input-lg"></textarea></span>
+                        <div class="ant-form-explain">随便写点什么</div>
+                    </div>
+                </div>
+            </div>
+            <div class="ant-form-item"><label for="agreement" class="ant-col-6"><span><!-- react-text: 16710 -->卖身华府
+                <!-- /react-text --><i class="anticon anticon-question-circle-o"></i></span></label>
+                <div class="ant-col-14">
+                    <div class="ant-form-item-control "><label class="ant-checkbox-wrapper"><span
+                            class="ant-checkbox"><span class="ant-checkbox-inner"></span><input type="checkbox"
+                                                                                                class="ant-checkbox-input"></span><span>同意</span></label>
+                    </div>
+                </div>
+            </div>
+            <div class="ant-form-item" style="margin-top: 24px;">
+                <div class="ant-col-16 ant-col-offset-6">
+                    <div class="ant-form-item-control ">
+                        <button type="submit" class="ant-btn ant-btn-primary ant-btn-lg"><span>确 定</span></button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

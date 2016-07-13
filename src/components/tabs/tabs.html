@@ -1,0 +1,710 @@
+<link rel="stylesheet" href="../src/components/tabs/style/index.css"/>
+<link rel="stylesheet" href="../src/components/button/style/index.css">
+
+<style>
+    .code-box-demo {
+        background: #ECECEC;
+        overflow: hidden;
+        padding: 24px;
+    }
+</style>
+
+
+<h2>标签页</h2>
+
+<h3>样式依赖</h3>
+
+<p class="describe">依赖button样式</p>
+
+
+<div class="ant-row">
+    <div class="ant-col-11">
+
+
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-extra"><a href="#">More</a></div>
+            <div class="ant-card-body">
+
+                <p class="tit">基本</p>
+                <div class="ant-tabs ant-tabs-top ant-tabs-line">
+                    <div role="tablist" class="ant-tabs-bar" tabindex="0">
+                        <div class="ant-tabs-nav-container ">
+                            <div class="ant-tabs-nav-wrap">
+                                <div class="ant-tabs-nav-scroll">
+                                    <div class="ant-tabs-nav">
+                                        <div class="ant-tabs-ink-bar"
+                                             style="transform: translate3d(0px, 0px, 0px); width: 96px; display: block;"></div>
+                                        <div role="tab" aria-disabled="false" aria-selected="true"
+                                             class="ant-tabs-tab-active ant-tabs-tab">
+                                            <div class="ant-tabs-tab-inner">选项卡一</div>
+                                        </div>
+                                        <div role="tab" aria-disabled="false" aria-selected="false"
+                                             class=" ant-tabs-tab">
+                                            <div class="ant-tabs-tab-inner">选项卡二</div>
+                                        </div>
+                                        <div role="tab" aria-disabled="false" aria-selected="false"
+                                             class=" ant-tabs-tab">
+                                            <div class="ant-tabs-tab-inner">选项卡三</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ant-tabs-content">
+                        <div>
+                            <div role="tabpanel" aria-hidden="false" class="ant-tabs-tabpane">选项卡一内容</div>
+                            <!-- react-empty: 9686 --><!-- react-empty: 9687 -->
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-extra"><a href="#">More</a></div>
+            <div class="ant-card-body">
+
+                <p class="tit">禁用</p>
+                <div class="ant-tabs ant-tabs-top ant-tabs-line">
+                    <div role="tablist" class="ant-tabs-bar" tabindex="0">
+                        <div class="ant-tabs-nav-container ">
+                            <div class="ant-tabs-nav-wrap">
+                                <div class="ant-tabs-nav-scroll">
+                                    <div class="ant-tabs-nav">
+                                        <div class="ant-tabs-ink-bar"
+                                             style="transform: translate3d(0px, 0px, 0px); width: 96px; display: block;"></div>
+                                        <div role="tab" aria-disabled="false" aria-selected="true"
+                                             class="ant-tabs-tab-active ant-tabs-tab">
+                                            <div class="ant-tabs-tab-inner">选项卡一</div>
+                                        </div>
+                                        <div role="tab" aria-disabled="true" aria-selected="false"
+                                             class=" ant-tabs-tab ant-tabs-tab-disabled">
+                                            <div class="ant-tabs-tab-inner">选项卡二</div>
+                                        </div>
+                                        <div role="tab" aria-disabled="false" aria-selected="false"
+                                             class=" ant-tabs-tab">
+                                            <div class="ant-tabs-tab-inner">选项卡三</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ant-tabs-content">
+                        <div>
+                            <div role="tabpanel" aria-hidden="false" class="ant-tabs-tabpane">选项卡一</div>
+                            <!-- react-empty: 9904 --><!-- react-empty: 9905 -->
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-extra"><a href="#">More</a></div>
+            <div class="ant-card-body">
+
+                <p class="tit">图标</p>
+                <div class="ant-tabs ant-tabs-top ant-tabs-line">
+                    <div role="tablist" class="ant-tabs-bar" tabindex="0">
+                        <div class="ant-tabs-nav-container ">
+                            <div class="ant-tabs-nav-wrap">
+                                <div class="ant-tabs-nav-scroll">
+                                    <div class="ant-tabs-nav">
+                                        <div class="ant-tabs-ink-bar ant-tabs-ink-bar-transition-backward"
+                                             style="transform: translate3d(0px, 0px, 0px); width: 118px; display: block;"></div>
+                                        <div role="tab" aria-disabled="false" aria-selected="true"
+                                             class="ant-tabs-tab-active ant-tabs-tab">
+                                            <div class="ant-tabs-tab-inner"><span><i class="anticon anticon-apple"></i>
+                                                <!-- react-text: 9712 -->选项卡一<!-- /react-text --></span></div>
+                                        </div>
+                                        <div role="tab" aria-disabled="false" aria-selected="false"
+                                             class=" ant-tabs-tab">
+                                            <div class="ant-tabs-tab-inner"><span><i
+                                                    class="anticon anticon-android"></i>
+                                                <!-- react-text: 9717 -->选项卡二<!-- /react-text --></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ant-tabs-content">
+                        <div>
+                            <div role="tabpanel" aria-hidden="false" class="ant-tabs-tabpane">选项卡一</div>
+                            <div role="tabpanel" aria-hidden="true" class="ant-tabs-tabpane-hidden ant-tabs-tabpane">
+                                选项卡二
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-extra"><a href="#">More</a></div>
+            <div class="ant-card-body">
+
+                <p class="tit">位置</p>
+                <div>
+                    <div style="margin-bottom: 16px;"><!-- react-text: 9772 -->页签位置：<!-- /react-text -->
+                        <div class="ant-select ant-select-enabled">
+                            <div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true"
+                                 aria-expanded="false" tabindex="0">
+                                <div class="ant-select-selection__rendered">
+                                    <div class="ant-select-selection-selected-value"
+                                         style="display: block; opacity: 1;">top
+                                    </div>
+                                </div>
+                                <span class="ant-select-arrow" unselectable="unselectable"
+                                      style="-webkit-user-select: none;"><b></b></span></div>
+                        </div>
+                    </div>
+                    <div class="ant-tabs ant-tabs-top ant-tabs-line">
+                        <div role="tablist" class="ant-tabs-bar" tabindex="0">
+                            <div class="ant-tabs-nav-container ">
+                                <div class="ant-tabs-nav-wrap">
+                                    <div class="ant-tabs-nav-scroll">
+                                        <div class="ant-tabs-nav">
+                                            <div class="ant-tabs-ink-bar"
+                                                 style="transform: translate3d(0px, 0px, 0px); display: block; width: 96px;"></div>
+                                            <div role="tab" aria-disabled="false" aria-selected="true"
+                                                 class="ant-tabs-tab-active ant-tabs-tab">
+                                                <div class="ant-tabs-tab-inner">选项卡一</div>
+                                            </div>
+                                            <div role="tab" aria-disabled="false" aria-selected="false"
+                                                 class=" ant-tabs-tab">
+                                                <div class="ant-tabs-tab-inner">选项卡二</div>
+                                            </div>
+                                            <div role="tab" aria-disabled="false" aria-selected="false"
+                                                 class=" ant-tabs-tab">
+                                                <div class="ant-tabs-tab-inner">选项卡三</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div style="margin-bottom: 16px;"><!-- react-text: 9772 -->页签位置：<!-- /react-text -->
+                        <div class="ant-select ant-select-focused ant-select-enabled">
+                            <div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true"
+                                 aria-expanded="false" tabindex="0">
+                                <div class="ant-select-selection__rendered">
+                                    <div class="ant-select-selection-selected-value"
+                                         style="display: block; opacity: 1;">left
+                                    </div>
+                                </div>
+                                <span class="ant-select-arrow" unselectable="unselectable"
+                                      style="-webkit-user-select: none;"><b></b></span></div>
+                        </div>
+                    </div>
+                    <div class="ant-tabs ant-tabs-left ant-tabs-vertical ant-tabs-line">
+                        <div role="tablist" class="ant-tabs-bar" tabindex="0">
+                            <div class="ant-tabs-nav-container ">
+                                <div class="ant-tabs-nav-wrap">
+                                    <div class="ant-tabs-nav-scroll">
+                                        <div class="ant-tabs-nav">
+                                            <div class="ant-tabs-ink-bar"
+                                                 style="transform: translate3d(0px, 0px, 0px); display: block; height: 37px;"></div>
+                                            <div role="tab" aria-disabled="false" aria-selected="true"
+                                                 class="ant-tabs-tab-active ant-tabs-tab">
+                                                <div class="ant-tabs-tab-inner">选项卡一</div>
+                                            </div>
+                                            <div role="tab" aria-disabled="false" aria-selected="false"
+                                                 class=" ant-tabs-tab">
+                                                <div class="ant-tabs-tab-inner">选项卡二</div>
+                                            </div>
+                                            <div role="tab" aria-disabled="false" aria-selected="false"
+                                                 class=" ant-tabs-tab">
+                                                <div class="ant-tabs-tab-inner">选项卡三</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div style="margin-bottom: 16px;"><!-- react-text: 9772 -->页签位置：<!-- /react-text -->
+                        <div class="ant-select ant-select-enabled">
+                            <div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true"
+                                 aria-expanded="false" tabindex="0">
+                                <div class="ant-select-selection__rendered">
+                                    <div class="ant-select-selection-selected-value"
+                                         style="display: block; opacity: 1;">bottom
+                                    </div>
+                                </div>
+                                <span class="ant-select-arrow" unselectable="unselectable"
+                                      style="-webkit-user-select: none;"><b></b></span></div>
+                        </div>
+                    </div>
+                    <div class="ant-tabs ant-tabs-bottom ant-tabs-line">
+                        <div class="ant-tabs-content">
+                            <div>
+                                <div role="tabpanel" aria-hidden="false" class="ant-tabs-tabpane">选项卡一内容</div>
+                                <!-- react-empty: 10349 --><!-- react-empty: 10350 --></div>
+                        </div>
+                        <div role="tablist" class="ant-tabs-bar" tabindex="0">
+                            <div class="ant-tabs-nav-container ">
+                                <div class="ant-tabs-nav-wrap">
+                                    <div class="ant-tabs-nav-scroll">
+                                        <div class="ant-tabs-nav">
+                                            <div class="ant-tabs-ink-bar"
+                                                 style="transform: translate3d(0px, 0px, 0px); display: block; width: 96px;"></div>
+                                            <div role="tab" aria-disabled="false" aria-selected="true"
+                                                 class="ant-tabs-tab-active ant-tabs-tab">
+                                                <div class="ant-tabs-tab-inner">选项卡一</div>
+                                            </div>
+                                            <div role="tab" aria-disabled="false" aria-selected="false"
+                                                 class=" ant-tabs-tab">
+                                                <div class="ant-tabs-tab-inner">选项卡二</div>
+                                            </div>
+                                            <div role="tab" aria-disabled="false" aria-selected="false"
+                                                 class=" ant-tabs-tab">
+                                                <div class="ant-tabs-tab-inner">选项卡三</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div style="margin-bottom: 16px;"><!-- react-text: 9772 -->页签位置：<!-- /react-text -->
+                        <div class="ant-select ant-select-enabled">
+                            <div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true"
+                                 aria-expanded="false" tabindex="0">
+                                <div class="ant-select-selection__rendered">
+                                    <div class="ant-select-selection-selected-value"
+                                         style="display: block; opacity: 1;">right
+                                    </div>
+                                </div>
+                                <span class="ant-select-arrow" unselectable="unselectable"
+                                      style="-webkit-user-select: none;"><b></b></span></div>
+                        </div>
+                    </div>
+                    <div class="ant-tabs ant-tabs-right ant-tabs-vertical ant-tabs-line">
+                        <div role="tablist" class="ant-tabs-bar" tabindex="0">
+                            <div class="ant-tabs-nav-container ">
+                                <div class="ant-tabs-nav-wrap">
+                                    <div class="ant-tabs-nav-scroll">
+                                        <div class="ant-tabs-nav">
+                                            <div class="ant-tabs-ink-bar"
+                                                 style="transform: translate3d(0px, 0px, 0px); display: block; height: 37px;"></div>
+                                            <div role="tab" aria-disabled="false" aria-selected="true"
+                                                 class="ant-tabs-tab-active ant-tabs-tab">
+                                                <div class="ant-tabs-tab-inner">选项卡一</div>
+                                            </div>
+                                            <div role="tab" aria-disabled="false" aria-selected="false"
+                                                 class=" ant-tabs-tab">
+                                                <div class="ant-tabs-tab-inner">选项卡二</div>
+                                            </div>
+                                            <div role="tab" aria-disabled="false" aria-selected="false"
+                                                 class=" ant-tabs-tab">
+                                                <div class="ant-tabs-tab-inner">选项卡三</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="ant-col-11 ant-col-offset-2">
+
+
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-extra"><a href="#">More</a></div>
+            <div class="ant-card-body">
+
+                <p class="tit">滑动</p>
+                <div class="ant-tabs ant-tabs-top ant-tabs-line">
+                    <div role="tablist" class="ant-tabs-bar" tabindex="0">
+                        <div class="ant-tabs-nav-container ant-tabs-nav-container-scrolling"><span
+                                unselectable="unselectable"
+                                class="ant-tabs-tab-prev ant-tabs-tab-btn-disabled"><span
+                                class="ant-tabs-tab-prev-icon"></span></span><span unselectable="unselectable"
+                                                                                   class="ant-tabs-tab-next"><span
+                                class="ant-tabs-tab-next-icon"></span></span>
+                            <div class="ant-tabs-nav-wrap">
+                                <div class="ant-tabs-nav-scroll">
+                                    <div class="ant-tabs-nav">
+                                        <div class="ant-tabs-ink-bar ant-tabs-ink-bar-transition-forward"
+                                             style="transform: translate3d(318px, 0px, 0px); width: 82px; display: block;"></div>
+                                        <div role="tab" aria-disabled="false" aria-selected="false"
+                                             class=" ant-tabs-tab">
+                                            <div class="ant-tabs-tab-inner">选项一</div>
+                                        </div>
+                                        <div role="tab" aria-disabled="false" aria-selected="false"
+                                             class=" ant-tabs-tab">
+                                            <div class="ant-tabs-tab-inner">选项二</div>
+                                        </div>
+                                        <div role="tab" aria-disabled="false" aria-selected="false"
+                                             class=" ant-tabs-tab">
+                                            <div class="ant-tabs-tab-inner">选项三</div>
+                                        </div>
+                                        <div role="tab" aria-disabled="false" aria-selected="true"
+                                             class="ant-tabs-tab-active ant-tabs-tab">
+                                            <div class="ant-tabs-tab-inner">选项四</div>
+                                        </div>
+                                        <div role="tab" aria-disabled="false" aria-selected="false"
+                                             class=" ant-tabs-tab">
+                                            <div class="ant-tabs-tab-inner">选项五</div>
+                                        </div>
+                                        <div role="tab" aria-disabled="false" aria-selected="false"
+                                             class=" ant-tabs-tab">
+                                            <div class="ant-tabs-tab-inner">选项六</div>
+                                        </div>
+                                        <div role="tab" aria-disabled="false" aria-selected="false"
+                                             class=" ant-tabs-tab">
+                                            <div class="ant-tabs-tab-inner">选项七</div>
+                                        </div>
+                                        <div role="tab" aria-disabled="false" aria-selected="false"
+                                             class=" ant-tabs-tab">
+                                            <div class="ant-tabs-tab-inner">选项八</div>
+                                        </div>
+                                        <div role="tab" aria-disabled="false" aria-selected="false"
+                                             class=" ant-tabs-tab">
+                                            <div class="ant-tabs-tab-inner">选项九</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ant-tabs-content">
+                        <div>
+                            <div role="tabpanel" aria-hidden="true" class="ant-tabs-tabpane-hidden ant-tabs-tabpane">
+                                选项卡一
+                            </div>
+                            <div role="tabpanel" aria-hidden="true" class="ant-tabs-tabpane-hidden ant-tabs-tabpane">
+                                选项卡二
+                            </div>
+                            <div role="tabpanel" aria-hidden="true" class="ant-tabs-tabpane-hidden ant-tabs-tabpane">
+                                选项卡三
+                            </div>
+                            <div role="tabpanel" aria-hidden="false" class="ant-tabs-tabpane">选项卡四</div>
+                            <!-- react-empty: 9950 --><!-- react-empty: 9951 --><!-- react-empty: 9952 -->
+                            <!-- react-empty: 9953 --><!-- react-empty: 9954 --></div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-extra"><a href="#">More</a></div>
+            <div class="ant-card-body">
+
+                <p class="tit">附加内容</p>
+                <div class="ant-tabs ant-tabs-top ant-tabs-line">
+                    <div role="tablist" class="ant-tabs-bar" tabindex="0">
+                        <div style="float: right;">
+                            <div class="ant-tabs-extra-content">
+                                <button type="button" class="ant-btn"><span>额外操作</span></button>
+                            </div>
+                        </div>
+                        <div class="ant-tabs-nav-container ">
+                            <div class="ant-tabs-nav-wrap">
+                                <div class="ant-tabs-nav-scroll">
+                                    <div class="ant-tabs-nav">
+                                        <div class="ant-tabs-ink-bar ant-tabs-ink-bar-transition-backward"
+                                             style="transform: translate3d(0px, 0px, 0px); width: 96px; display: block;"></div>
+                                        <div role="tab" aria-disabled="false" aria-selected="true"
+                                             class="ant-tabs-tab-active ant-tabs-tab">
+                                            <div class="ant-tabs-tab-inner">选项卡一</div>
+                                        </div>
+                                        <div role="tab" aria-disabled="false" aria-selected="false"
+                                             class=" ant-tabs-tab">
+                                            <div class="ant-tabs-tab-inner">选项卡二</div>
+                                        </div>
+                                        <div role="tab" aria-disabled="false" aria-selected="false"
+                                             class=" ant-tabs-tab">
+                                            <div class="ant-tabs-tab-inner">选项卡三</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ant-tabs-content">
+                        <div>
+                            <div role="tabpanel" aria-hidden="false" class="ant-tabs-tabpane">选项卡一内容</div>
+                            <div role="tabpanel" aria-hidden="true" class="ant-tabs-tabpane-hidden ant-tabs-tabpane">
+                                选项卡二内容
+                            </div><!-- react-empty: 9756 --></div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-extra"><a href="#">More</a></div>
+            <div class="ant-card-body">
+
+                <p class="tit">迷你型</p>
+                <div class="ant-tabs ant-tabs-top ant-tabs-mini ant-tabs-line">
+                    <div role="tablist" class="ant-tabs-bar" tabindex="0">
+                        <div class="ant-tabs-nav-container ">
+                            <div class="ant-tabs-nav-wrap">
+                                <div class="ant-tabs-nav-scroll">
+                                    <div class="ant-tabs-nav">
+                                        <div class="ant-tabs-ink-bar"
+                                             style="transform: translate3d(80px, 0px, 0px); width: 80px; display: block;"></div>
+                                        <div role="tab" aria-disabled="false" aria-selected="false"
+                                             class=" ant-tabs-tab">
+                                            <div class="ant-tabs-tab-inner">选项卡一</div>
+                                        </div>
+                                        <div role="tab" aria-disabled="false" aria-selected="true"
+                                             class="ant-tabs-tab-active ant-tabs-tab">
+                                            <div class="ant-tabs-tab-inner">选项卡二</div>
+                                        </div>
+                                        <div role="tab" aria-disabled="false" aria-selected="false"
+                                             class=" ant-tabs-tab">
+                                            <div class="ant-tabs-tab-inner">选项卡三</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ant-tabs-content">
+                        <div><!-- react-empty: 9983 -->
+                            <div role="tabpanel" aria-hidden="false" class="ant-tabs-tabpane">选项卡二内容</div>
+                            <!-- react-empty: 9985 --></div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-extra"><a href="#">More</a></div>
+            <div class="ant-card-body">
+
+                <p class="tit">卡片式页签</p>
+                <div class="ant-tabs ant-tabs-top ant-tabs-card">
+                    <div role="tablist" class="ant-tabs-bar" tabindex="0">
+                        <div class="ant-tabs-nav-container ">
+                            <div class="ant-tabs-nav-wrap">
+                                <div class="ant-tabs-nav-scroll">
+                                    <div class="ant-tabs-nav">
+                                        <div class="ant-tabs-ink-bar ant-tabs-ink-bar-transition-backward"
+                                             style="transform: translate3d(0px, 0px, 0px); width: 90px; display: block;"></div>
+                                        <div role="tab" aria-disabled="false" aria-selected="true"
+                                             class="ant-tabs-tab-active ant-tabs-tab">
+                                            <div class="ant-tabs-tab-inner">选项卡一</div>
+                                        </div>
+                                        <div role="tab" aria-disabled="false" aria-selected="false"
+                                             class=" ant-tabs-tab">
+                                            <div class="ant-tabs-tab-inner">选项卡二</div>
+                                        </div>
+                                        <div role="tab" aria-disabled="false" aria-selected="false"
+                                             class=" ant-tabs-tab">
+                                            <div class="ant-tabs-tab-inner">选项卡三</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ant-tabs-content">
+                        <div role="tabpanel" aria-hidden="false" class="ant-tabs-tabpane">选项卡一内容</div>
+                        <div role="tabpanel" aria-hidden="true" class="ant-tabs-tabpane-hidden ant-tabs-tabpane">
+                            选项卡二内容
+                        </div>
+                        <div role="tabpanel" aria-hidden="true" class="ant-tabs-tabpane-hidden ant-tabs-tabpane">
+                            选项卡三内容
+                        </div>
+                    </div>
+                </div>
+
+
+                <p class="tit">新增和关闭标签</p>
+                <div class="ant-tabs ant-tabs-top ant-tabs-card ant-tabs-editable-card">
+                    <div role="tablist" class="ant-tabs-bar" tabindex="0">
+                        <div style="float: right;">
+                            <div class="ant-tabs-extra-content"><span><i
+                                    class="ant-tabs-new-tab anticon anticon-plus"></i></span></div>
+                        </div>
+                        <div class="ant-tabs-nav-container ">
+                            <div class="ant-tabs-nav-wrap">
+                                <div class="ant-tabs-nav-scroll">
+                                    <div class="ant-tabs-nav">
+                                        <div class="ant-tabs-ink-bar"
+                                             style="transform: translate3d(0px, 0px, 0px); width: 92px; display: block;"></div>
+                                        <div role="tab" aria-disabled="false" aria-selected="true"
+                                             class="ant-tabs-tab-active ant-tabs-tab">
+                                            <div class="ant-tabs-tab-inner">
+                                                <div><!-- react-text: 9827 -->选项卡<!-- /react-text --><i
+                                                        class="anticon anticon-cross"></i></div>
+                                            </div>
+                                        </div>
+                                        <div role="tab" aria-disabled="false" aria-selected="false"
+                                             class=" ant-tabs-tab">
+                                            <div class="ant-tabs-tab-inner">
+                                                <div><!-- react-text: 9832 -->选项卡<!-- /react-text --><i
+                                                        class="anticon anticon-cross"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ant-tabs-content">
+                        <div role="tabpanel" aria-hidden="false" class="ant-tabs-tabpane">选项卡一内容</div>
+                        <!-- react-empty: 9836 --></div>
+                </div>
+
+
+                <p class="tit">自定义新增页签触发器</p>
+                <div>
+                    <div style="margin-bottom: 16px;">
+                        <button type="button" class="ant-btn ant-btn-ghost"><span>新 增</span></button>
+                    </div>
+                    <div class="ant-tabs ant-tabs-top ant-tabs-card ant-tabs-editable-card">
+                        <div role="tablist" class="ant-tabs-bar" tabindex="0">
+                            <div class="ant-tabs-nav-container ">
+                                <div class="ant-tabs-nav-wrap">
+                                    <div class="ant-tabs-nav-scroll">
+                                        <div class="ant-tabs-nav">
+                                            <div class="ant-tabs-ink-bar"
+                                                 style="transform: translate3d(0px, 0px, 0px); width: 92px; display: block;"></div>
+                                            <div role="tab" aria-disabled="false" aria-selected="true"
+                                                 class="ant-tabs-tab-active ant-tabs-tab">
+                                                <div class="ant-tabs-tab-inner">
+                                                    <div><!-- react-text: 9864 -->选项卡<!-- /react-text --><i
+                                                            class="anticon anticon-cross"></i></div>
+                                                </div>
+                                            </div>
+                                            <div role="tab" aria-disabled="false" aria-selected="false"
+                                                 class=" ant-tabs-tab">
+                                                <div class="ant-tabs-tab-inner">
+                                                    <div><!-- react-text: 9869 -->选项卡<!-- /react-text --><i
+                                                            class="anticon anticon-cross"></i></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ant-tabs-content">
+                            <div role="tabpanel" aria-hidden="false" class="ant-tabs-tabpane">选项卡一内容</div>
+                            <!-- react-empty: 9873 --></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-extra"><a href="#">More</a></div>
+            <div class="ant-card-body">
+
+                <p class="tit">卡片式页签容器</p>
+                <section class="code-box-demo">
+                    <div class="card-container">
+                        <div class="ant-tabs ant-tabs-top ant-tabs-card">
+                            <div role="tablist" class="ant-tabs-bar" tabindex="0">
+                                <div class="ant-tabs-nav-container ">
+                                    <div class="ant-tabs-nav-wrap">
+                                        <div class="ant-tabs-nav-scroll">
+                                            <div class="ant-tabs-nav">
+                                                <div class="ant-tabs-ink-bar"
+                                                     style="transform: translate3d(0px, 0px, 0px); width: 90px; display: block;"></div>
+                                                <div role="tab" aria-disabled="false" aria-selected="true"
+                                                     class="ant-tabs-tab-active ant-tabs-tab">
+                                                    <div class="ant-tabs-tab-inner">选项卡一</div>
+                                                </div>
+                                                <div role="tab" aria-disabled="false" aria-selected="false"
+                                                     class=" ant-tabs-tab">
+                                                    <div class="ant-tabs-tab-inner">选项卡二</div>
+                                                </div>
+                                                <div role="tab" aria-disabled="false" aria-selected="false"
+                                                     class=" ant-tabs-tab">
+                                                    <div class="ant-tabs-tab-inner">选项卡三</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ant-tabs-content">
+                                <div role="tabpanel" aria-hidden="false" class="ant-tabs-tabpane">选项卡一内容</div>
+                                <!-- react-empty: 10045 --><!-- react-empty: 10046 --></div>
+                        </div>
+                    </div>
+                    <style>#components-tabs-demo-card-top .code-box-demo {
+                        background: #ECECEC;
+                        overflow: hidden;
+                        padding: 24px;
+                    }
+
+                    .card-container > .ant-tabs-card > .ant-tabs-content {
+                        background: #fff;
+                        padding: 16px;
+                        height: 120px;
+                        margin-top: -16px;
+                    }
+
+                    .card-container > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab {
+                        border-color: transparent;
+                    }
+
+                    .card-container > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active {
+                        border-color: #fff;
+                    }</style>
+                </section>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+

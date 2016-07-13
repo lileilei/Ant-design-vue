@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>组件地图</title>
+    <link rel="stylesheet" href="../src/components/style/index.css"/>
+    <link rel="stylesheet" href="../src/components/card/style/index.css"/>
+    <link rel="stylesheet" href="../src/components/menu/style/index.css"/>
+    <link rel="stylesheet" href="../src/components/layout/style/index.css"/>
+    <script type="text/javascript" src="../node_modules/vue/dist/vue.min.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <style type="text/css">
+        html, body, #yh-layout {
+            min-height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #yh-layout {
+            position: relative;
+            width: 100%;
+            min-height: 100%;
+        }
+
+        header {
+            height: 55px;
+            background-color: #23b7e5;
+        }
+
+        header .logo {
+            font-size: 25px;
+            color: #FFFFFF;
+            line-height: 55px;
+            margin-left: 50px;
+        }
+
+        #aside {
+            position: absolute;
+            width: 220px;
+            top: 55px;
+            left: 0;
+            bottom: 0;
+            z-index: 116;
+            background-color: #fff;
+            padding-bottom: 20px;
+            border-right: 1px solid #e9e9e9;
+            /*overflow-x: hidden;*/
+        }
+
+        .ant-card{
+            margin-bottom: 20px;;
+        }
+        #aside li {
+            cursor: pointer;;
+        }
+
+        main {
+            margin-left: 220px;
+            padding: 20px 40px;
+        }
+
+        #loading {
+            text-align: center;
+            margin-top: 100px;
+        }
+        main > h2{
+          font-size: 36px;
+          margin:10px 0 40px 0;
+        }
+        main > h3{
+          font-size: 18px;
+          margin:20px 0;
+        }
+
+        main > h4 {
+            margin: 16px 0;
+            font-size: 14px;
+            line-height: 1;
+            font-weight: normal;
+        }
+        main p.tit{
+            margin: 20px 0;
+            font-weight: bold;
+            color: #999;;
+        }
+        main p.describe{
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        .code-box{
+            position: relative;
+            padding: 16px;
+            margin-top: 20px;;
+            border-radius: 0 0 6px 6px;
+            -webkit-transition: background-color .4s ease;
+            transition: background-color .4s ease;
+            width: 100%;
+            font-size: 12px;
+            background: #fbfbfb;
+        }
+        .code-body{
+            display: none;
+        }
+        .code-box .collapse {
+            position: absolute;
+            right: 16px;
+            bottom: 16px;
+            cursor: pointer;
+            width: 18px;
+            height: 18px;
+            font-size: 18px;
+            line-height: 18px;
+            opacity: .5;
+            text-align: center;
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+            -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+            color: #999;
+            background: #fff;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            border-radius: 100%;
+        }
+        pre code {
+            display: block;
+            background: #fff;
+            color: #666;
+            line-height: 1.7;
+            border: 1px solid #e9e9e9;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-size: 13px;
+        }
+        .code-box-title {
+            position: absolute;
+            top: -14px;
+            padding: 1px 1.1em;
+            color: #777;
+            border-radius: 6px;
+            background: #fbfbfb;
+            -webkit-transition: all .4s ease;
+            transition: all .4s ease;
+            box-shadow: 0 -1.2px 0 #e9e9e9;
+        }
+        .code-box-title:before {
+            font-family: anticon;
+            content: "\E658";
+            font-size: 16px;
+            vertical-align: middle;
+            line-height: 22px;
+            position: relative;
+            margin-right: 8px;
+            top: -2px;
+            color: #ccc;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            display: inline-block;
+        }
+        .ant-menu-item-group .ant-menu-item{
+            padding-left: 48px;
+        }
+        .aside-container .chinese {
+            font-size: 12px;
+            margin-left: 6px;
+            font-weight: 400;
+            opacity: .67;
+        }
+
+        .space{
+            margin: 20px 0;
+            border-color:transparent;
+            clear: both;
+
+        }
+    </style>
+</head>
+<body>
+<div id="yh-layout">
+    <header>
+        <div class="logo">title</div>
+    </header>
+    <div id="aside">
+        <ul class="ant-menu ant-menu-inline aside-container ant-menu-light ant-menu-root" role="menu">
+            <li class="ant-menu-item"  style="padding-left: 24px;"><a
+                    href="/docs/react/introduce">Ant Design of Vue</a></li>
+            <li class="ant-menu-item"  style="padding-left: 24px;"><a
+                    href="/docs/react/getting-started">快速上手</a></li>
+            <li class="ant-menu-item"  style="padding-left: 24px;"><a
+                    href="/changelog">更新日志</a></li>
+            <li class="ant-menu-item"  style="padding-left: 24px;"><a
+                    href="/docs/react/upgrade-notes">升级指南</a></li>
+            <li class="ant-menu-submenu-inline ant-menu-submenu-open ant-menu-submenu">
+                <div class="ant-menu-submenu-title" style="padding-left: 24px;"><h4>Components</h4></div>
+                <ul class="ant-menu ant-menu-inline  ant-menu-sub">
+                    <li class=" ant-menu-item-group">
+                        <div class="ant-menu-item-group-title">Basic</div>
+                        <ul class="ant-menu-item-group-list">
+                            <li class="ant-menu-item ant-menu-item-selected">
+                                <a href="#button"><span>Button</span><span class="chinese">按钮</span></a>
+                            </li>
+                            <li class="ant-menu-item">
+                                <a href="#icon"><span>Icon</span><span class="chinese">图标</span></a></li>
+                            <li class="ant-menu-item">
+                                <a href="#layout"><span>Layout</span><span class="chinese">布局</span></a></li>
+                        </ul>
+                    </li>
+                    <li class=" ant-menu-item-group">
+                        <div class="ant-menu-item-group-title">Form Controls</div>
+                        <ul class="ant-menu-item-group-list">
+                            <li class="ant-menu-item">
+                                <a href="#checkbox"><span>Checkbox</span><span class="chinese">多选框</span></a>
+                            </li>
+                            <li class="ant-menu-item">
+                                <a href="#cascader"><span>Cascader</span><span class="chinese">级联选择</span></a>
+                            </li>
+                            <li class="ant-menu-item">
+                                <a href="#date-picker"><span>DatePicker</span><span class="chinese">日期选择框</span></a>
+                            </li>
+                            <li class="ant-menu-item">
+                                <a href="#form"><span>Form</span><span class="chinese">表单</span></a>
+                            </li>
+                            <li class="ant-menu-item">
+                                <a href="#input-number"><span>InputNumber</span><span class="chinese">数字输入框</span></a>
+                            </li>
+                            <li class="ant-menu-item">
+                                <a href="#input"><span>Input</span><span class="chinese">输入框</span></a>
+                            </li>
+                            <li class="ant-menu-item">
+                                <a href="#radio"><span>Radio</span><span class="chinese">单选框</span></a>
+                            </li>
+                            <li class="ant-menu-item">
+                                <a href="#rate"><span>Rate</span><span class="chinese">评分</span></a>
+                            </li>
+                            <li class="ant-menu-item">
+                                <a href="#select"><span>Select</span><span class="chinese">选择器</span></a>
+                            </li>
+                            <li class="ant-menu-item">
+                                <a href="#slider"><span>Slider</span><span class="chinese">滑动输入条</span></a>
+                            </li>
+                            <li class="ant-menu-item">
+                                <a href="#switch"><span>Switch</span><span class="chinese">开关</span></a>
+                            </li>
+                            <li class="ant-menu-item">
+                                <a href="#tree-select"><span>TreeSelect</span><span class="chinese">树选择</span></a>
+                            </li>
+                            <li class="ant-menu-item">
+                                <a href="#time-picker"><span>TimePicker</span><span class="chinese">时间选择框</span></a>
+                            </li>
+                            <li class="ant-menu-item">
+                                <a href="#transfer"><span>Transfer</span><span class="chinese">穿梭框</span></a>
+                            </li>
+                            <li class="ant-menu-item">
+                                <a href="#upload"><span>Upload</span><span class="chinese">上传</span></a>
+                            </li>
+                            <li class=" ant-menu-item-group">
+                                <div class="ant-menu-item-group-title">Views</div>
+                                <ul class="ant-menu-item-group-list">
+                                    <li class="ant-menu-item">
+                                        <a href="#alert"><span>Alert</span><span class="chinese">警告提示</span></a>
+                                    </li>
+                                    <li class="ant-menu-item">
+                                        <a href="#badge"><span>Badge</span><span class="chinese">徽标志</span></a></li>
+                                    <li class="ant-menu-item">
+                                        <a href="#calendar"><span>Calendar</span><span class="chinese">日历</span></a></li>
+                                    <li class="ant-menu-item">
+                                        <a href="#card"><span>Card</span><span class="chinese">卡片</span></a>
+                                    </li>
+                                    <li class="ant-menu-item">
+                                        <a href="#carousel"><span>Carousel</span><span class="chinese">走马灯</span></a>
+                                    </li>
+
+                                    <li class="ant-menu-item">
+                                        <a href="#collapse"><span>Collapse</span><span class="chinese">折叠面板</span></a>
+                                    </li>
+                                    <li class="ant-menu-item">
+                                        <a href="#dropdown"><span>Dropdown</span><span class="chinese">下拉菜单</span></a>
+                                    </li>
+                                    <li class="ant-menu-item">
+                                        <a href="#modal"><span>Modal</span><span class="chinese">对话框</span></a></li>
+                                    <li class="ant-menu-item">
+                                        <a href="#message"><span>Message</span><span class="chinese">全局提示</span></a></li>
+                                    <li class="ant-menu-item">
+                                        <a href="#notification"><span>Notification</span><span class="chinese">通知提醒框</span></a>
+                                    </li>
+                                    <li class="ant-menu-item">
+                                        <a href="#popover"><span>Popover</span><span class="chinese">气泡卡片</span></a>
+                                    </li>
+
+                                    <li class="ant-menu-item">
+                                        <a href="#progress"><span>Progress</span><span class="chinese">进度条</span></a>
+                                    </li>
+                                    <li class="ant-menu-item">
+                                        <a href="#popconfirm"><span>Popconfirm</span><span class="chinese">气泡确认框</span></a></li>
+                                    <li class="ant-menu-item">
+                                        <a href="#table"><span>Table</span><span class="chinese">表格</span></a></li>
+                                    <li class="ant-menu-item">
+                                        <a href="#tag"><span>Tag</span><span class="chinese">标签</span></a>
+                                    </li>
+                                    <li class="ant-menu-item">
+                                        <a href="#timeline"><span>Timeline</span><span class="chinese">时间轴</span></a>
+                                    </li>
+                                    <li class="ant-menu-item">
+                                        <a href="#tooltip"><span>Tooltip</span><span class="chinese">文字提示</span></a>
+                                    </li>
+                                    <li class="ant-menu-item">
+                                        <a href="#tree"><span>Tree</span><span class="chinese">树形控件</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class=" ant-menu-item-group">
+                                <div class="ant-menu-item-group-title">Navigation</div>
+                                <ul class="ant-menu-item-group-list">
+                                    <li class="ant-menu-item">
+                                        <a href="#breadcrumb"><span>Breadcrumb</span><span class="chinese">面包屑</span></a>
+                                    </li>
+                                    <li class="ant-menu-item">
+                                        <a href="#menu"><span>Menu</span><span class="chinese">导航菜单</span></a></li>
+                                    <li class="ant-menu-item">
+                                        <a href="#pagination"><span>Pagination</span><span class="chinese">分页</span></a></li>
+                                    <li class="ant-menu-item">
+                                        <a href="#steps"><span>Steps</span><span class="chinese">步骤条</span></a></li>
+                                    <li class="ant-menu-item">
+                                        <a href="#tabs"><span>Tabs</span><span class="chinese">标签页</span></a></li>
+                                </ul>
+                            </li>
+
+                            <li class=" ant-menu-item-group">
+                                <div class="ant-menu-item-group-title">Navigation</div>
+                                <ul class="ant-menu-item-group-list">
+                                    <li class="ant-menu-item">
+                                        <a href="#affix"><span>Affix</span><span class="chinese">图钉</span></a>
+                                    </li>
+                                    <li class="ant-menu-item">
+                                        <a href="#backtop"><span>BackTop</span><span class="chinese">置顶</span></a></li>
+                                    <li class="ant-menu-item">
+                                        <a href="#layout"><span>LocaleProvider</span><span class="chinese">国际化</span></a></li>
+                                    <li class="ant-menu-item">
+                                        <a href="#queueanim"><span>QueueAnim</span><span class="chinese">进出场动画</span></a></li>
+                                    <li class="ant-menu-item">
+                                        <a href="#spin"><span>Spin</span><span class="chinese">加载中</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <main id="article">
+        即将呈现。。。
+    </main>
+</div>
+</body>
+<script type="text/javascript">
+    //获取页面渲染到article框内
+    function getpage(uri){
+        $("#article").html('<div id="loading"><i class=" anticon anticon-loading"></i>&nbsp;加载中...</div>');
+        $.ajax({
+            type: 'GET',
+            url: '../src/components/'+uri+'/'+uri+'.html',
+            success: function (data) {
+                setTimeout(function () {
+                    $("#article").html(data);
+                }, 500);
+            }
+        });
+    }
+    if(location.hash){
+        var hash = location.hash.substring(1);
+        getpage(hash);
+    }else{
+        getpage('button');
+    }
+    $("#aside").on('click', 'a', function (e) {
+        $("#aside li.ant-menu-item-selected").removeClass('ant-menu-item-selected');
+        $(this).parent().addClass('ant-menu-item-selected');
+        window.scrollTo(0,0);
+        var uri = this.getAttribute('href').substring(1);
+        getpage(uri);
+    });
+
+
+
+</script>
+</html>

@@ -1,0 +1,237 @@
+<link rel="stylesheet" href="../src/components/slider/style/index.css"/>
+<link rel="stylesheet" href="../src/components/tooltip/style/index.css"/>
+<link rel="stylesheet" href="../src/components/input-number/style/index.css"/>
+
+<style>
+    .code-box-demo .ant-slider {
+        margin-bottom: 50px;
+    }
+</style>
+<h2>Slider 滑动输入条</h2>
+<h3>依赖</h3>
+<p class="describe">样式依赖 tooltip 和 input-number 的样式</p>
+<div class="ant-row">
+    <div class="ant-col-11">
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-body">
+                <div>
+                    <div class="ant-slider">
+                        <div class="ant-slider-handle" style="left: 51%;"></div>
+                        <div class="ant-slider-track" style="visibility: visible; left: 0%; width: 51%;"></div>
+                        <div class="ant-slider-step"></div>
+                        <div class="ant-slider-mark"></div>
+                    </div>
+                    <hr class="space"/>
+                    <div class="ant-slider">
+                        <div class="ant-slider-handle" style="left: 59%;"></div>
+                        <div class="ant-slider-handle" style="left: 19%;"></div>
+                        <div class="ant-slider-track" style="visibility: visible; left: 19%; width: 40%;"></div>
+                        <div class="ant-slider-step"></div>
+                        <div class="ant-slider-mark"></div>
+                    </div>
+                    <hr class="space"/>
+
+                    <div class="ant-slider ant-slider-disabled">
+                        <div class="ant-slider-handle" style="left: 50%;"></div>
+                        <div class="ant-slider-handle" style="left: 20%;"></div>
+                        <div class="ant-slider-track" style="visibility: visible; left: 20%; width: 30%;"></div>
+                        <div class="ant-slider-step"></div>
+                        <div class="ant-slider-mark"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="code-box">
+                <div class="code-box-title"><a href="#components-button-demo-basic">基本</a></div>
+                <span>样例说明</span>
+                <span class="collapse anticon anticon-circle-o-right" unselectable="none"></span>
+            </div>
+            <div class="code-body">
+                这里是样例代码<
+            </div>
+        </div>
+
+
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-body">
+                <div>
+                    <div class="ant-row">
+                        <div class="ant-col-12">
+                            <div class="ant-slider">
+                                <div class="ant-slider-handle" style="left: 42.1053%;"></div>
+                                <div class="ant-slider-track"
+                                     style="visibility: visible; left: 0%; width: 42.1053%;"></div>
+                                <div class="ant-slider-step"></div>
+                                <div class="ant-slider-mark"></div>
+                            </div>
+                        </div>
+                        <div class="ant-col-4">
+                            <div class="ant-input-number" style="margin-left: 16px;">
+                                <div class="ant-input-number-handler-wrap"><a unselectable="unselectable"
+                                                                              class="ant-input-number-handler ant-input-number-handler-up "><span
+                                        unselectable="unselectable"
+                                        class="ant-input-number-handler-up-inner"></span></a><a
+                                        unselectable="unselectable"
+                                        class="ant-input-number-handler ant-input-number-handler-down "><span
+                                        unselectable="unselectable" class="ant-input-number-handler-down-inner"></span></a>
+                                </div>
+                                <div class="ant-input-number-input-wrap"><input class="ant-input-number-input" min="1"
+                                                                                max="20" step="1" autocomplete="off">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ant-row">
+                        <div class="ant-col-12">
+                            <div class="ant-slider">
+                                <div class="ant-slider-handle" style="left: 50%;"></div>
+                                <div class="ant-slider-track" style="visibility: visible; left: 0%; width: 50%;"></div>
+                                <div class="ant-slider-step"></div>
+                                <div class="ant-slider-mark"></div>
+                            </div>
+                        </div>
+                        <div class="ant-col-4">
+                            <div class="ant-input-number" style="margin-left: 16px;">
+                                <div class="ant-input-number-handler-wrap"><a unselectable="unselectable"
+                                                                              class="ant-input-number-handler ant-input-number-handler-up "><span
+                                        unselectable="unselectable"
+                                        class="ant-input-number-handler-up-inner"></span></a><a
+                                        unselectable="unselectable"
+                                        class="ant-input-number-handler ant-input-number-handler-down "><span
+                                        unselectable="unselectable" class="ant-input-number-handler-down-inner"></span></a>
+                                </div>
+                                <div class="ant-input-number-input-wrap"><input class="ant-input-number-input" min="0"
+                                                                                max="1" step="0.01" autocomplete="off">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="code-box">
+                <div class="code-box-title"><a href="#components-button-demo-basic">带输入框的滑块</a></div>
+                <span>样例说明</span>
+                <span class="collapse anticon anticon-circle-o-right" unselectable="none"></span>
+            </div>
+            <div class="code-body">
+                这里是样例代码<
+            </div>
+        </div>
+    </div>
+    <div class="ant-col-11 ant-col-offset-2">
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-body">
+                <div class="code-box-demo">
+                    <p class="tit">包含关系</p>
+                    <div class="ant-slider">
+                        <div class="ant-slider-handle" style="left: 38%;"></div>
+                        <div class="ant-slider-track" style="visibility: visible; left: 0%; width: 38%;"></div>
+                        <div class="ant-slider-step"><span class="ant-slider-dot ant-slider-dot-active"
+                                                           style="left: 0%;"></span><span
+                                class="ant-slider-dot ant-slider-dot-active" style="left: 26%;"></span><span
+                                class="ant-slider-dot ant-slider-dot-active" style="left: 37%;"></span><span
+                                class="ant-slider-dot" style="left: 100%;"></span></div>
+                        <div class="ant-slider-mark"><span class="ant-slider-mark-text ant-slider-mark-text-active"
+                                                           style="width: 30%; margin-left: -15%; left: 0%;">0°C</span><span
+                                class="ant-slider-mark-text ant-slider-mark-text-active"
+                                style="width: 30%; margin-left: -15%; left: 26%;">26°C</span><span
+                                class="ant-slider-mark-text ant-slider-mark-text-active"
+                                style="width: 30%; margin-left: -15%; left: 37%;">37°C</span><span
+                                class="ant-slider-mark-text"
+                                style="width: 30%; margin-left: -15%; left: 100%; color: red;"><strong>100°C</strong></span>
+                        </div>
+                    </div>
+                    <div class="ant-slider">
+                        <div class="ant-slider-handle" style="left: 59%;"></div>
+                        <div class="ant-slider-handle" style="left: 26%;"></div>
+                        <div class="ant-slider-track" style="visibility: visible; left: 26%; width: 33%;"></div>
+                        <div class="ant-slider-step"><span class="ant-slider-dot" style="left: 0%;"></span><span
+                                class="ant-slider-dot ant-slider-dot-active" style="left: 26%;"></span><span
+                                class="ant-slider-dot ant-slider-dot-active" style="left: 37%;"></span><span
+                                class="ant-slider-dot" style="left: 100%;"></span></div>
+                        <div class="ant-slider-mark"><span class="ant-slider-mark-text"
+                                                           style="width: 30%; margin-left: -15%; left: 0%;">0°C</span><span
+                                class="ant-slider-mark-text ant-slider-mark-text-active"
+                                style="width: 30%; margin-left: -15%; left: 26%;">26°C</span><span
+                                class="ant-slider-mark-text ant-slider-mark-text-active"
+                                style="width: 30%; margin-left: -15%; left: 37%;">37°C</span><span
+                                class="ant-slider-mark-text"
+                                style="width: 30%; margin-left: -15%; left: 100%; color: red;"><strong>100°C</strong></span>
+                        </div>
+                    </div>
+                    <p class="tit">并列关系</p>
+                    <div class="ant-slider">
+                        <div class="ant-slider-handle" style="left: 53%;"></div>
+                        <div class="ant-slider-track" style="visibility: hidden; left: 0%; width: 53%;"></div>
+                        <div class="ant-slider-step"><span class="ant-slider-dot" style="left: 0%;"></span><span
+                                class="ant-slider-dot" style="left: 26%;"></span><span class="ant-slider-dot"
+                                                                                       style="left: 37%;"></span><span
+                                class="ant-slider-dot" style="left: 100%;"></span></div>
+                        <div class="ant-slider-mark"><span class="ant-slider-mark-text"
+                                                           style="width: 30%; margin-left: -15%; left: 0%;">0°C</span><span
+                                class="ant-slider-mark-text"
+                                style="width: 30%; margin-left: -15%; left: 26%;">26°C</span><span
+                                class="ant-slider-mark-text"
+                                style="width: 30%; margin-left: -15%; left: 37%;">37°C</span><span
+                                class="ant-slider-mark-text"
+                                style="width: 30%; margin-left: -15%; left: 100%; color: red;"><strong>100°C</strong></span>
+                        </div>
+                    </div>
+                    <p class="tit">结合 step</p>
+                    <div class="ant-slider">
+                        <div class="ant-slider-handle" style="left: 60%;"></div>
+                        <div class="ant-slider-track" style="visibility: visible; left: 0%; width: 60%;"></div>
+                        <div class="ant-slider-step"><span class="ant-slider-dot ant-slider-dot-active"
+                                                           style="left: 0%;"></span><span
+                                class="ant-slider-dot ant-slider-dot-active" style="left: 26%;"></span><span
+                                class="ant-slider-dot ant-slider-dot-active" style="left: 37%;"></span><span
+                                class="ant-slider-dot" style="left: 100%;"></span></div>
+                        <div class="ant-slider-mark"><span class="ant-slider-mark-text ant-slider-mark-text-active"
+                                                           style="width: 30%; margin-left: -15%; left: 0%;">0°C</span><span
+                                class="ant-slider-mark-text ant-slider-mark-text-active"
+                                style="width: 30%; margin-left: -15%; left: 26%;">26°C</span><span
+                                class="ant-slider-mark-text ant-slider-mark-text-active"
+                                style="width: 30%; margin-left: -15%; left: 37%;">37°C</span><span
+                                class="ant-slider-mark-text"
+                                style="width: 30%; margin-left: -15%; left: 100%; color: red;"><strong>100°C</strong></span>
+                        </div>
+                    </div>
+                    <p class="tit">`step=null`</p>
+                    <div class="ant-slider">
+                        <div class="ant-slider-handle" style="left: 37%;"></div>
+                        <div class="ant-slider-track" style="visibility: visible; left: 0%; width: 37%;"></div>
+                        <div class="ant-slider-step"><span class="ant-slider-dot ant-slider-dot-active"
+                                                           style="left: 0%;"></span><span
+                                class="ant-slider-dot ant-slider-dot-active" style="left: 26%;"></span><span
+                                class="ant-slider-dot ant-slider-dot-active" style="left: 37%;"></span><span
+                                class="ant-slider-dot" style="left: 100%;"></span></div>
+                        <div class="ant-slider-mark"><span class="ant-slider-mark-text ant-slider-mark-text-active"
+                                                           style="width: 30%; margin-left: -15%; left: 0%;">0°C</span><span
+                                class="ant-slider-mark-text ant-slider-mark-text-active"
+                                style="width: 30%; margin-left: -15%; left: 26%;">26°C</span><span
+                                class="ant-slider-mark-text ant-slider-mark-text-active"
+                                style="width: 30%; margin-left: -15%; left: 37%;">37°C</span><span
+                                class="ant-slider-mark-text"
+                                style="width: 30%; margin-left: -15%; left: 100%; color: red;"><strong>100°C</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="code-box">
+                <div class="code-box-title"><a href="#components-button-demo-basic">分段式滑块</a></div>
+                <span>使用 marks 属性标注分段式滑块，使用 value / defaultValue 指定滑块位置。当 included=false 时，表明不同标记间为并列关系。当 step=null 时，Slider 的可选值仅有 marks 标出来的部分。</span>
+                <span class="collapse anticon anticon-circle-o-right" unselectable="none"></span>
+            </div>
+            <div class="code-body">
+                这里是样例代码<
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--ant-tooltip-hidden   默认是异常的-->
+<div class="ant-tooltip  ant-tooltip-placement-top " style="left: 616px;top: 204px;">
+    <div class="ant-tooltip-content">
+        <div class="ant-tooltip-arrow"></div>
+        <div class="ant-tooltip-inner"><span>12</span></div>
+    </div>
+</div>

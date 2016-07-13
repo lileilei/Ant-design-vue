@@ -1,0 +1,250 @@
+<link rel="stylesheet" href="../src/components/menu/style/index.css"/>
+
+<h2>导航菜单</h2>
+
+
+<div class="ant-card ant-card-bordered">
+    <div class="ant-card-extra"><a href="#">More</a></div>
+    <div class="ant-card-body">
+
+        <p class="tit">顶部导航</p>
+        <ul class="ant-menu ant-menu-horizontal  ant-menu-light ant-menu-root" role="menu" aria-activedescendant=""
+            tabindex="0">
+            <li class="ant-menu-item-selected ant-menu-item" role="menuitem" aria-selected="true"><i
+                    class="anticon anticon-mail"></i><!-- react-text: 1702 -->导航一<!-- /react-text --></li>
+            <li class="ant-menu-item-disabled ant-menu-item" role="menuitem" aria-selected="false" aria-disabled="true">
+                <i class="anticon anticon-appstore"></i><!-- react-text: 1705 -->导航二<!-- /react-text --></li>
+            <li class="ant-menu-submenu-horizontal ant-menu-submenu">
+                <div class="ant-menu-submenu-title" aria-open="false" aria-owns="1467272642820_3" aria-haspopup="true">
+                    <span><i class="anticon anticon-setting"></i><!-- react-text: 1710 -->导航 - 子菜单
+                        <!-- /react-text --></span></div>
+
+            </li>
+            <li class="ant-menu-item" role="menuitem" aria-selected="false"><a href="http://www.alipay.com/"
+                                                                               target="_blank">导航四 - 链接</a></li>
+        </ul>
+
+
+    </div>
+</div>
+
+<ul class="ant-menu ant-menu-vertical  ant-menu-sub ant-menu-hidden" role="menu"
+    aria-activedescendant="" id="1467272642820_3" style="display: block;width: 150px;">
+    <li class=" ant-menu-item-group">
+        <div class="ant-menu-item-group-title">分组1</div>
+        <ul class="ant-menu-item-group-list">
+            <li class="ant-menu-item" role="menuitem" aria-selected="false">选项1</li>
+            <li class="ant-menu-item" role="menuitem" aria-selected="false">选项2</li>
+        </ul>
+    </li>
+    <li class=" ant-menu-item-group">
+        <div class="ant-menu-item-group-title">分组2</div>
+        <ul class="ant-menu-item-group-list">
+            <li class="ant-menu-item" role="menuitem" aria-selected="false">选项3</li>
+            <li class="ant-menu-item" role="menuitem" aria-selected="false">选项4</li>
+        </ul>
+    </li>
+</ul>
+
+
+<!--内嵌菜单-->
+<div class="ant-card ant-card-bordered">
+    <div class="ant-card-extra"><a href="#">More</a></div>
+    <div class="ant-card-body">
+
+        <p class="tit">内嵌菜单</p>
+        <ul class="ant-menu ant-menu-inline  ant-menu-light ant-menu-root" role="menu" aria-activedescendant=""
+            tabindex="0" style="width: 240px;">
+            <li class="ant-menu-submenu-inline ant-menu-submenu-open ant-menu-submenu">
+                <div class="ant-menu-submenu-title" aria-open="true" aria-owns="1467272642824_4" aria-haspopup="true"
+                     style="padding-left: 24px;"><span><i class="anticon anticon-mail"></i><span>导航一</span></span></div>
+                <ul class="ant-menu ant-menu-inline  ant-menu-sub" role="menu" aria-activedescendant=""
+                    id="1467272642824_4">
+                    <li class=" ant-menu-item-group">
+                        <div class="ant-menu-item-group-title">分组1</div>
+                        <ul class="ant-menu-item-group-list">
+                            <li class="ant-menu-item-selected ant-menu-item" role="menuitem" aria-selected="true"
+                                style="padding-left: 48px;">选项1
+                            </li>
+                            <li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left: 48px;">
+                                选项2
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=" ant-menu-item-group">
+                        <div class="ant-menu-item-group-title">分组2</div>
+                        <ul class="ant-menu-item-group-list">
+                            <li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left: 48px;">
+                                选项3
+                            </li>
+                            <li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left: 48px;">
+                                选项4
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="ant-menu-submenu-inline ant-menu-submenu">
+                <div class="ant-menu-submenu-title" aria-open="false" aria-owns="1467272642826_5" aria-haspopup="true"
+                     style="padding-left: 24px;"><span><i class="anticon anticon-appstore"></i><span>导航二</span></span>
+                </div><!-- react-empty: 1749 --></li>
+            <li class="ant-menu-submenu-inline ant-menu-submenu">
+                <div class="ant-menu-submenu-title" aria-open="false" aria-owns="1467272642827_6" aria-haspopup="true"
+                     style="padding-left: 24px;"><span><i class="anticon anticon-setting"></i><span>导航三</span></span>
+                </div><!-- react-empty: 1755 --></li>
+        </ul>
+
+
+    </div>
+</div>
+
+
+<!--只展开当前父级菜单-->
+<div class="ant-card ant-card-bordered">
+    <div class="ant-card-extra"><a href="#">More</a></div>
+    <div class="ant-card-body">
+
+        <p class="tit">只展开当前父级菜单</p>
+        <ul class="ant-menu ant-menu-inline  ant-menu-light ant-menu-root" role="menu" aria-activedescendant=""
+            tabindex="0" style="width: 240px;">
+            <li class="ant-menu-submenu-inline ant-menu-submenu-open ant-menu-submenu">
+                <div class="ant-menu-submenu-title" aria-open="true" aria-owns="1467272642832_7" aria-haspopup="true"
+                     style="padding-left: 24px;"><span><i class="anticon anticon-mail"></i><span>导航一</span></span></div>
+                <ul class="ant-menu ant-menu-inline ant-menu-sub" role="menu" aria-activedescendant=""
+                    id="1467272642832_7">
+                    <li class="ant-menu-item-selected ant-menu-item" role="menuitem" aria-selected="true"
+                        style="padding-left: 48px;">选项1
+                    </li>
+                    <li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left: 48px;">选项2</li>
+                    <li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left: 48px;">选项3</li>
+                    <li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left: 48px;">选项4</li>
+                </ul>
+            </li>
+            <li class="ant-menu-submenu-inline ant-menu-submenu">
+                <div class="ant-menu-submenu-title" aria-open="false" aria-owns="1467272642833_8" aria-haspopup="true"
+                     style="padding-left: 24px;"><span><i class="anticon anticon-appstore"></i><span>导航二</span></span>
+                </div>
+                <ul class="ant-menu ant-menu-inline  ant-menu-sub ant-menu-hidden" role="menu" aria-activedescendant=""
+                    id="1467272642833_8">
+                    <li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left: 48px;">选项5</li>
+                    <li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left: 48px;">选项6</li>
+                    <li class="ant-menu-submenu-inline ant-menu-submenu">
+                        <div class="ant-menu-submenu-title" aria-open="false" aria-owns="1467273744679_19"
+                             aria-haspopup="true" style="padding-left: 48px;">三级导航
+                        </div><!-- react-empty: 2265 --></li>
+                </ul>
+            </li>
+            <li class="ant-menu-submenu-inline ant-menu-submenu">
+                <div class="ant-menu-submenu-title" aria-open="false" aria-owns="1467272642834_9" aria-haspopup="true"
+                     style="padding-left: 24px;"><span><i class="anticon anticon-setting"></i><span>导航三</span></span>
+                </div><!-- react-empty: 1787 --></li>
+        </ul>
+
+
+    </div>
+</div>
+
+<!--垂直菜单-->
+<div class="ant-card ant-card-bordered">
+    <div class="ant-card-extra"><a href="#">More</a></div>
+    <div class="ant-card-body">
+
+        <p class="tit">只展开当前父级菜单</p>
+        <ul class="ant-menu ant-menu-vertical  ant-menu-light ant-menu-root" role="menu" aria-activedescendant=""
+            tabindex="0" style="width: 240px;">
+            <li class="ant-menu-submenu-vertical ant-menu-submenu">
+                <div class="ant-menu-submenu-title" aria-open="false" aria-owns="1467272642836_10" aria-haspopup="true">
+                    <span><i class="anticon anticon-mail"></i><span>导航一</span></span></div>
+                <ul class="ant-menu ant-menu-vertical  ant-menu-sub ant-menu-hidden" role="menu"
+                    aria-activedescendant="" id="1467272642836_10" style="display: block">
+                    <li class=" ant-menu-item-group">
+                        <div class="ant-menu-item-group-title">分组1</div>
+                        <ul class="ant-menu-item-group-list">
+                            <li class="ant-menu-item" role="menuitem" aria-selected="false">选项1</li>
+                            <li class="ant-menu-item" role="menuitem" aria-selected="false">选项2</li>
+                        </ul>
+                    </li>
+                    <li class=" ant-menu-item-group">
+                        <div class="ant-menu-item-group-title">分组2</div>
+                        <ul class="ant-menu-item-group-list">
+                            <li class="ant-menu-item" role="menuitem" aria-selected="false">选项3</li>
+                            <li class="ant-menu-item" role="menuitem" aria-selected="false">选项4</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="ant-menu-submenu-vertical ant-menu-submenu">
+                <div class="ant-menu-submenu-title" aria-open="false" aria-owns="1467272642837_11" aria-haspopup="true">
+                    <span><i class="anticon anticon-appstore"></i><span>导航二</span></span></div>
+                <ul class="ant-menu ant-menu-vertical  ant-menu-sub ant-menu-hidden" role="menu"
+                    aria-activedescendant="" id="1467272642837_11">
+                    <li class="ant-menu-item" role="menuitem" aria-selected="false">选项5</li>
+                    <li class="ant-menu-item" role="menuitem" aria-selected="false">选项6</li>
+                    <li class="ant-menu-submenu-vertical ant-menu-submenu">
+                        <div class="ant-menu-submenu-title" aria-open="false" aria-owns="1467273820515_20"
+                             aria-haspopup="true">三级导航
+                        </div><!-- react-empty: 2282 --></li>
+                </ul>
+            </li>
+            <li class="ant-menu-submenu-vertical ant-menu-submenu">
+                <div class="ant-menu-submenu-title" aria-open="false" aria-owns="1467272642838_12" aria-haspopup="true">
+                    <span><icon type="setting"></icon><span>导航三</span></span></div>
+                <ul class="ant-menu ant-menu-vertical  ant-menu-sub ant-menu-hidden" role="menu"
+                    aria-activedescendant="" id="1467272642838_12">
+                    <li class="ant-menu-item" role="menuitem" aria-selected="false">选项9</li>
+                    <li class="ant-menu-item" role="menuitem" aria-selected="false">选项10</li>
+                    <li class="ant-menu-item" role="menuitem" aria-selected="false">选项11</li>
+                    <li class="ant-menu-item" role="menuitem" aria-selected="false">选项12</li>
+                </ul>
+            </li>
+        </ul>
+
+
+    </div>
+</div>
+
+
+<!--主题-->
+<div class="ant-card ant-card-bordered">
+    <div class="ant-card-extra"><a href="#">More</a></div>
+    <div class="ant-card-body">
+
+        <p class="tit">主题</p>
+        <div><span class="ant-switch ant-switch-checked" tabindex="0"><span class="ant-switch-inner">暗</span></span><br><br>
+            <ul class="ant-menu ant-menu-inline  ant-menu-dark ant-menu-root" role="menu" aria-activedescendant=""
+                tabindex="0" style="width: 240px;">
+                <li class="ant-menu-submenu-inline ant-menu-submenu-open ant-menu-submenu">
+                    <div class="ant-menu-submenu-title" aria-open="true" aria-owns="1467272642843_13"
+                         aria-haspopup="true" style="padding-left: 24px;"><span><i
+                            class="anticon anticon-mail"></i><span>导航一</span></span></div>
+                    <ul class="ant-menu ant-menu-inline  ant-menu-sub" role="menu" aria-activedescendant=""
+                        id="1467272642843_13">
+                        <li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left: 48px;">
+                            选项1
+                        </li>
+                        <li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left: 48px;">
+                            选项2
+                        </li>
+                        <li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left: 48px;">
+                            选项3
+                        </li>
+                        <li class="ant-menu-item" role="menuitem" aria-selected="false" style="padding-left: 48px;">
+                            选项4
+                        </li>
+                    </ul>
+                </li>
+                <li class="ant-menu-submenu-inline ant-menu-submenu">
+                    <div class="ant-menu-submenu-title" aria-open="false" aria-owns="1467272642844_14"
+                         aria-haspopup="true" style="padding-left: 24px;"><span><i class="anticon anticon-appstore"></i><span>导航二</span></span>
+                    </div><!-- react-empty: 1854 --></li>
+                <li class="ant-menu-submenu-inline ant-menu-submenu">
+                    <div class="ant-menu-submenu-title" aria-open="false" aria-owns="1467272642845_15"
+                         aria-haspopup="true" style="padding-left: 24px;"><span><i
+                            class="anticon anticon-setting"></i><span>导航三</span></span></div><!-- react-empty: 1860 -->
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+</div>

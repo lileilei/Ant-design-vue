@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="../src/components/input/style/index.css"/>
+<link rel="stylesheet" href="../src/components/select/style/index.css"/>
+<link rel="stylesheet" href="../src/components/button/style/index.css"/>
+
+<style>
+    .example-input .ant-input-wrapper{
+        width: 200px;
+        margin: 0 8px 8px 0;
+    }
+</style>
+<h2>Input输入框</h2>
+
+<h3>代码演示</h3>
+<div class="ant-card ant-card-bordered" style="width: 500px;">
+    <div class="ant-card-head"><h4 class="ant-card-head-title">Input框类型</h4></div>
+    <div class="ant-card-extra"><a href="#">More</a></div>
+    <div class="ant-card-body">
+        <p class="tit">基本类型</p>
+        <span class="ant-input-wrapper"><input type="text" placeholder="基本使用" class="ant-input"></span>
+        <p class="tit">前置/后置标签</p>
+        <div><span class="ant-input-wrapper ant-input-group"><span class="ant-input-group-addon">Http://</span><input
+                type="text" class="ant-input"><span class="ant-input-group-addon">.com</span></span>
+            <div style="margin-top: 8px;"><span class="ant-input-wrapper ant-input-group"><span
+                    class="ant-input-group-addon"><div class="ant-select ant-select-enabled" style="width: 80px;"><div
+                    class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true"
+                    aria-expanded="false" tabindex="0"><div class="ant-select-selection__rendered"><div
+                    class="ant-select-selection-selected-value"
+                    style="display: block; opacity: 1;">Http://</div></div><span class="ant-select-arrow"
+                                                                                 unselectable="unselectable"
+                                                                                 style="-webkit-user-select: none;"><b></b></span></div></div></span><input
+                    type="text" class="ant-input"><span class="ant-input-group-addon"><div
+                    class="ant-select ant-select-open ant-select-enabled" style="width: 70px;"><div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true"
+                                                                                                    aria-expanded="true"
+                                                                                                    tabindex="0"><div
+                    class="ant-select-selection__rendered"><div class="ant-select-selection-selected-value"
+                                                                style="display: block; opacity: 1;">.com</div></div><span
+                    class="ant-select-arrow" unselectable="unselectable"
+                    style="-webkit-user-select: none;"><b></b></span></div></div></span></span></div>
+        </div>
+        <p class="tit">搜索框</p>
+
+        <div class="ant-search-input-wrapper" style="width: 200px;"><span class="ant-input-group ant-search-input"><span
+                class="ant-input-wrapper"><input type="text" placeholder="input search text" class="ant-input"></span><div
+                class="ant-input-group-wrap"><button type="button" class="ant-btn ant-btn-icon-only ant-search-btn"><i
+                class="anticon anticon-search"></i></button></div></span></div>
+
+        <p class="tit">适应文本高度的(需要脚本来控制)</p>
+        <span class="ant-input-wrapper"><textarea type="textarea" placeholder="有最大高度和最小高度" class="ant-input"
+                                                  style="height: 46px; min-height: 46px; max-height: 118px;"></textarea></span>
+        <p class="tit">文本框尺寸</p>
+        <div class="example-input">
+            <div class="ant-input-wrapper"><input type="text" placeholder="大尺寸" class="ant-input ant-input-lg"></div>
+            <div class="ant-input-wrapper"><input type="text" placeholder="默认尺寸" class="ant-input"></div>
+            <div class="ant-input-wrapper"><input type="text" placeholder="小尺寸" class="ant-input ant-input-sm"></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+{
+  "multi_entry": [
+    "button-tab",
+    "timeline",
+    "tabbar",
+    "tab"
+  ],
+  "ignore": [
+    "style",
+    "test"
+  ]
+}

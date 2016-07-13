@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="../src/components/select/style/index.css"/>
+
+<link rel="stylesheet" href="../src/components/tree-select/style/index.css"/>
+
+<h2>TreeSelect 树选择</h2>
+
+<div class="ant-card ant-card-bordered">
+    <div class="ant-card-head"><h4 class="ant-card-head-title">基本用法</h4></div>
+    <div class="ant-card-extra"><a href="#">More</a></div>
+    <div class="ant-card-body">
+        <span class="ant-select ant-select-open ant-select-focused ant-select-enabled" style="width: 300px;"><span
+                class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" tabindex="0"
+                aria-expanded="true"><span class="ant-select-selection__rendered"><span></span></span><span
+                class="ant-select-selection__clear"></span><span class="ant-select-arrow" style="outline: none;"><b></b></span></span></span>
+    </div>
+    <div class="code-box">
+        <div class="code-box-title"><a href="#components-button-demo-basic">样例类型</a></div>
+        <span>样例说明</span>
+        <span class="collapse anticon anticon-circle-o-right" unselectable="none"></span>
+    </div>
+    <div class="code-body">
+        这里是样例代码<
+    </div>
+</div>
+
+<!-- 下拉菜单  -->
+<div class="ant-select-dropdown ant-select-tree-dropdown ant-select-dropdown--single ant-select-dropdown-placement-bottomLeft"
+     style="max-height: 400px; overflow: auto; left: 282.922px;top: 249px; width: 300px;">
+    <div>
+        <ul class="ant-select-tree" role="tree-node" unselectable="true">
+            <li class=""><span class="ant-select-tree-switcher ant-select-tree-noline_open"></span><a
+                    title="parent 1"><span class="ant-select-tree-title">parent 1</span></a>
+                <ul class="ant-select-tree-child-tree ant-select-tree-child-tree-open" data-expanded="true">
+                    <li class=""><span class="ant-select-tree-switcher ant-select-tree-noline_open"></span><a
+                            title="parent 1-0"><span class="ant-select-tree-title">parent 1-0</span></a>
+                        <ul class="ant-select-tree-child-tree ant-select-tree-child-tree-open" data-expanded="true">
+                            <li class=""><span
+                                    class="ant-select-tree-switcher ant-select-tree-switcher-noop ant-select-tree-noline_docu"></span><a
+                                    title="my leaf"><span class="ant-select-tree-title">my leaf</span></a></li>
+                            <li class=""><span
+                                    class="ant-select-tree-switcher ant-select-tree-switcher-noop ant-select-tree-noline_docu"></span><a
+                                    title="your leaf"><span class="ant-select-tree-title">your leaf</span></a></li>
+                        </ul>
+                    </li>
+                    <li class=""><span class="ant-select-tree-switcher ant-select-tree-noline_open"></span><a
+                            title="parent 1-1"><span class="ant-select-tree-title">parent 1-1</span></a>
+                        <ul class="ant-select-tree-child-tree ant-select-tree-child-tree-open" data-expanded="true">
+                            <li class=""><span
+                                    class="ant-select-tree-switcher ant-select-tree-switcher-noop ant-select-tree-noline_docu"></span><a
+                                    title=""><span class="ant-select-tree-title"><b
+                                    style="color: rgb(0, 136, 204);">sss</b></span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>

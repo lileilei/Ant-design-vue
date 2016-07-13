@@ -1,0 +1,91 @@
+<link rel="stylesheet" href="../src/components/input-number/style/index.css"/>
+
+<h2>数字输入框</h2>
+
+<div class="ant-card ant-card-bordered" style="width: 400px;">
+    <div class="ant-card-body">
+        <p class="tit">基本类型</p>
+        <div class="ant-input-number">
+            <div class="ant-input-number-handler-wrap"><a unselectable="unselectable"
+                                                          class="ant-input-number-handler ant-input-number-handler-up "><span
+                    unselectable="unselectable" class="ant-input-number-handler-up-inner"></span></a><a
+                    unselectable="unselectable"
+                    class="ant-input-number-handler ant-input-number-handler-down ant-input-number-handler-down-disabled"><span
+                    unselectable="unselectable" class="ant-input-number-handler-down-inner"></span></a></div>
+            <div class="ant-input-number-input-wrap"><input class="ant-input-number-input" min="1" max="10" step="1"
+                                                            autocomplete="off"></div>
+        </div>
+        <p class="tit">不可用</p>
+        <div class="ant-input-number ant-input-number-disabled">
+            <div class="ant-input-number-handler-wrap"><a unselectable="unselectable"
+                                                          class="ant-input-number-handler ant-input-number-handler-up "><span
+                    unselectable="unselectable" class="ant-input-number-handler-up-inner"></span></a><a
+                    unselectable="unselectable" class="ant-input-number-handler ant-input-number-handler-down "><span
+                    unselectable="unselectable" class="ant-input-number-handler-down-inner"></span></a></div>
+            <div class="ant-input-number-input-wrap"><input class="ant-input-number-input" min="1" max="10" disabled=""
+                                                            step="1" autocomplete="off"></div>
+        </div>
+        <p class="tit">不同大小</p>
+        <div>
+            <div class="ant-input-number ant-input-number-lg">
+                <div class="ant-input-number-handler-wrap"><a unselectable="unselectable"
+                                                              class="ant-input-number-handler ant-input-number-handler-up "><span
+                        unselectable="unselectable" class="ant-input-number-handler-up-inner"></span></a><a
+                        unselectable="unselectable"
+                        class="ant-input-number-handler ant-input-number-handler-down "><span
+                        unselectable="unselectable" class="ant-input-number-handler-down-inner"></span></a></div>
+                <div class="ant-input-number-input-wrap"><input class="ant-input-number-input" min="1" max="100000"
+                                                                step="1" autocomplete="off"></div>
+            </div>
+            <div class="ant-input-number">
+                <div class="ant-input-number-handler-wrap"><a unselectable="unselectable"
+                                                              class="ant-input-number-handler ant-input-number-handler-up "><span
+                        unselectable="unselectable" class="ant-input-number-handler-up-inner"></span></a><a
+                        unselectable="unselectable"
+                        class="ant-input-number-handler ant-input-number-handler-down "><span
+                        unselectable="unselectable" class="ant-input-number-handler-down-inner"></span></a></div>
+                <div class="ant-input-number-input-wrap"><input class="ant-input-number-input" min="1" max="100000"
+                                                                step="1" autocomplete="off"></div>
+            </div>
+            <div class="ant-input-number ant-input-number-sm">
+                <div class="ant-input-number-handler-wrap"><a unselectable="unselectable"
+                                                              class="ant-input-number-handler ant-input-number-handler-up "><span
+                        unselectable="unselectable" class="ant-input-number-handler-up-inner"></span></a><a
+                        unselectable="unselectable"
+                        class="ant-input-number-handler ant-input-number-handler-down "><span
+                        unselectable="unselectable" class="ant-input-number-handler-down-inner"></span></a></div>
+                <div class="ant-input-number-input-wrap"><input class="ant-input-number-input" min="1" max="100000"
+                                                                step="1" autocomplete="off"></div>
+            </div>
+        </div>
+    </div>
+    <div class="code-box">
+        <div class="code-box-title"><a href="#components-button-demo-basic">整数</a></div>
+        <span>增减每次1</span>
+        <span class="collapse anticon anticon-circle-o-right" unselectable="none"></span>
+    </div>
+    <div class="code-body">
+
+    </div>
+</div>
+<div class="ant-card ant-card-bordered" style="width: 400px;">
+    <div class="ant-card-body">
+        <div class="ant-input-number">
+            <div class="ant-input-number-handler-wrap"><a class="ant-input-number-handler ant-input-number-handler-up ">
+                <span class="ant-input-number-handler-up-inner"></span></a>
+                <a class="ant-input-number-handler ant-input-number-handler-down ">
+                    <span class="ant-input-number-handler-down-inner"></span></a></div>
+            <div class="ant-input-number-input-wrap"><input class="ant-input-number-input" min="1" max="10" step="0.1"
+                                                            value="1.1"
+                                                            autocomplete="off"></div>
+        </div>
+    </div>
+    <div class="code-box">
+        <div class="code-box-title"><a href="#components-button-demo-basic">小数</a></div>
+        <span>增减每次0.1</span>
+        <span class="collapse anticon anticon-circle-o-right" unselectable="none"></span>
+    </div>
+    <div class="code-body">
+
+    </div>
+</div>

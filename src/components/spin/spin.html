@@ -1,0 +1,148 @@
+<link rel="stylesheet" href="../src/components/spin/style/index.css"/>
+
+
+<style>
+    .ant-alert-with-description.ant-alert-no-icon {
+        padding: 16px;
+    }
+
+    .ant-alert-with-description {
+        padding: 16px 16px 16px 69px;
+        position: relative;
+        border-radius: 6px;
+        margin-bottom: 10px;
+        color: #666;
+        line-height: 1.5;
+    }
+
+    .ant-alert-info {
+        border: 1px solid #d5f1fd;
+        background-color: #eaf8fe;
+    }
+
+    .ant-alert {
+        position: relative;
+        padding: 8px 8px 8px 16px;
+        border-radius: 6px;
+        color: #666;
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 10px;
+    }
+
+    article, aside, blockquote, body, button, code, dd, details, div, dl, dt, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, input, legend, li, menu, nav, ol, p, pre, section, td, textarea, th, ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    *, :after, :before {
+        box-sizing: border-box;
+    }
+
+    * {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    user agent stylesheet
+    div {
+        display: block;
+    }
+
+    Inherited from div.ant-row
+    .ant-row {
+        position: relative;
+        margin-left: 0;
+        margin-right: 0;
+        height: auto;
+        zoom: 1;
+        display: block;
+    }
+
+    Inherited from div.ant-row
+    .ant-row {
+        position: relative;
+        margin-left: 0;
+        margin-right: 0;
+        height: auto;
+        zoom: 1;
+        display: block;
+    }
+</style>
+
+
+<h2>加载中...</h2>
+
+<div class="ant-card ant-card-bordered" style="width: 400px;">
+    <div class="ant-card-head"><h4 class="ant-card-head-title">加载中类型</h4></div>
+    <div class="ant-card-extra"><a href="#">More</a></div>
+    <div class="ant-card-body">
+        <p class="tit">基本用法</p>
+        <div class="ant-spin ant-spin-spinning"><span class="ant-spin-dot"></span>
+            <div class="ant-spin-text">加载中...</div>
+        </div>
+
+
+        <p class="tit">各种大小</p>
+        <div>
+            <div class="ant-spin ant-spin-sm ant-spin-spinning"><span class="ant-spin-dot"></span>
+                <div class="ant-spin-text">加载中...</div>
+            </div>
+            <div class="ant-spin ant-spin-spinning"><span class="ant-spin-dot"></span>
+                <div class="ant-spin-text">加载中...</div>
+            </div>
+            <div class="ant-spin ant-spin-lg ant-spin-spinning"><span class="ant-spin-dot"></span>
+                <div class="ant-spin-text">加载中...</div>
+            </div>
+        </div>
+
+        <p class="tit">自定义描述文案</p>
+        <section class="code-box-demo">
+            <div class="ant-spin-nested-loading">
+                <div class="ant-spin ant-spin-spinning ant-spin-show-text"><span class="ant-spin-dot"></span>
+                    <div class="ant-spin-text">正在读取数据...</div>
+                </div>
+                <div class="ant-spin-container">
+                    <div data-show="true" class="ant-alert ant-alert-info ant-alert-with-description ant-alert-no-icon">
+                        <span class="ant-alert-message">消息提示的文案</span><span class="ant-alert-description">消息提示的辅助性文字介绍消息提示的辅助性文字介绍消息提示的辅助性文字介绍</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <p class="tit">卡片加载中</p>
+        <section class="code-box-demo">
+            <div>
+                <div class="">
+                    <div class="ant-spin"><span class="ant-spin-dot"></span>
+                        <div class="ant-spin-text">加载中...</div>
+                    </div>
+                    <div class="ant-spin-container">
+                        <div data-show="true"
+                             class="ant-alert ant-alert-info ant-alert-with-description ant-alert-no-icon"><span
+                                class="ant-alert-message">消息提示的文案</span><span class="ant-alert-description">消息提示的辅助性文字介绍消息提示的辅助性文字介绍消息提示的辅助性文字介绍</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <p class="tit">卡片加载中(active)</p>
+        <section class="code-box-demo">
+            <div>
+                <div class="ant-spin-nested-loading">
+                    <div class="ant-spin ant-spin-spinning"><span class="ant-spin-dot"></span>
+                        <div class="ant-spin-text">加载中...</div>
+                    </div>
+                    <div class="ant-spin-container">
+                        <div data-show="true"
+                             class="ant-alert ant-alert-info ant-alert-with-description ant-alert-no-icon"><span
+                                class="ant-alert-message">消息提示的文案</span><span class="ant-alert-description">消息提示的辅助性文字介绍消息提示的辅助性文字介绍消息提示的辅助性文字介绍</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+

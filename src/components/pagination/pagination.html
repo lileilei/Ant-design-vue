@@ -1,0 +1,209 @@
+<link rel="stylesheet" href="../src/components/pagination/style/index.css"/>
+<link rel="stylesheet" href="../src/components/select/style/index.css">
+
+<h2>分页</h2>
+
+<h3>样式依赖</h3>
+
+<p class="describe">依赖select样式</p>
+
+<div class="ant-row">
+    <!----------------------------------------------------------------左侧----------------------------------------------------------------->
+    <div class="ant-col-11">
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-extra"><a href="#">More</a></div>
+            <div class="ant-card-body">
+                <p class="tit">基本</p>
+                <ul class="ant-pagination " unselectable="unselectable">
+                    <li title="上一页" class="ant-pagination-disabled ant-pagination-prev"><a></a></li>
+                    <li title="第一页" class="ant-pagination-item ant-pagination-item-1 ant-pagination-item-active">
+                        <a>1</a>
+                    </li>
+                    <li title="2" class="ant-pagination-item ant-pagination-item-2"><a>2</a></li>
+                    <li title="3" class="ant-pagination-item ant-pagination-item-3"><a>3</a></li>
+                    <li title="4" class="ant-pagination-item ant-pagination-item-4"><a>4</a></li>
+                    <li title="5" class="ant-pagination-item ant-pagination-item-5"><a>5</a></li>
+                    <li title="下一页" class="ant-pagination-next"><a></a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-extra"><a href="#">More</a></div>
+            <div class="ant-card-body">
+                <p class="tit">改变</p>
+                <ul class="ant-pagination " unselectable="unselectable">
+                    <li title="上一页" class="ant-pagination-prev"><a></a></li>
+                    <li title="第一页" class="ant-pagination-item ant-pagination-item-1"><a>1</a></li>
+                    <li title="2" class="ant-pagination-item ant-pagination-item-2"><a>2</a></li>
+                    <li title="3" class="ant-pagination-item ant-pagination-item-3 ant-pagination-item-active"><a>3</a>
+                    </li>
+                    <li title="4" class="ant-pagination-item ant-pagination-item-4"><a>4</a></li>
+                    <li title="5" class="ant-pagination-item ant-pagination-item-5"><a>5</a></li>
+                    <li title="向后 5 页" class="ant-pagination-jump-next"><a></a></li>
+                    <li title="最后一页: 50" class="ant-pagination-item ant-pagination-item-50"><a>50</a></li>
+                    <li title="下一页" class="ant-pagination-next"><a></a></li>
+                    <div class="ant-pagination-options">
+                        <div class="ant-pagination-options-size-changer ant-select ant-select-enabled">
+                            <div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true"
+                                 aria-expanded="false" tabindex="0">
+                                <div class="ant-select-selection__rendered">
+                                    <div class="ant-select-selection-selected-value"
+                                         style="display: block; opacity: 1;">10 条/页
+                                    </div>
+                                </div>
+                                <span class="ant-select-arrow" unselectable="unselectable"
+                                      style="-webkit-user-select: none;"><b></b></span></div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-extra"><a href="#">More</a></div>
+            <div class="ant-card-body">
+                <p class="tit">迷你</p>
+                <div>
+                    <ul class="ant-pagination  mini" unselectable="unselectable">
+                        <li title="上一页" class="ant-pagination-prev"><a></a></li>
+                        <li title="第一页" class="ant-pagination-item ant-pagination-item-1"><a>1</a></li>
+                        <li title="2" class="ant-pagination-item ant-pagination-item-2"><a>2</a></li>
+                        <li title="3" class="ant-pagination-item ant-pagination-item-3"><a>3</a></li>
+                        <li title="4" class="ant-pagination-item ant-pagination-item-4"><a>4</a></li>
+                        <li title="5" class="ant-pagination-item ant-pagination-item-5 ant-pagination-item-active">
+                            <a>5</a></li>
+                        <li title="下一页" class="ant-pagination-disabled ant-pagination-next"><a></a></li>
+                        <!-- react-empty: 390 --></ul>
+                    <br>
+                    <ul class="ant-pagination  mini" unselectable="unselectable">
+                        <li title="上一页" class="ant-pagination-prev"><a></a></li>
+                        <li title="第一页" class="ant-pagination-item ant-pagination-item-1"><a>1</a></li>
+                        <li title="2" class="ant-pagination-item ant-pagination-item-2"><a>2</a></li>
+                        <li title="3" class="ant-pagination-item ant-pagination-item-3"><a>3</a></li>
+                        <li title="4" class="ant-pagination-item ant-pagination-item-4"><a>4</a></li>
+                        <li title="5" class="ant-pagination-item ant-pagination-item-5 ant-pagination-item-active">
+                            <a>5</a></li>
+                        <li title="下一页" class="ant-pagination-disabled ant-pagination-next"><a></a></li>
+                        <div class="ant-pagination-options">
+                            <div class="ant-select-sm ant-pagination-options-size-changer ant-select ant-select-enabled">
+                                <div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true"
+                                     aria-expanded="false" tabindex="0">
+                                    <div class="ant-select-selection__rendered">
+                                        <div class="ant-select-selection-selected-value"
+                                             style="display: block; opacity: 1;">10 条/页
+                                        </div>
+                                    </div>
+                                    <span class="ant-select-arrow" unselectable="unselectable"
+                                          style="-webkit-user-select: none;"><b></b></span></div>
+                            </div>
+                            <div class="ant-pagination-options-quick-jumper"><!-- react-text: 415 -->跳至
+                                <!-- /react-text --><input type="text"><!-- react-text: 417 -->页<!-- /react-text -->
+                            </div>
+                        </div>
+                    </ul>
+                    <br>
+                    <ul class="ant-pagination  mini" unselectable="unselectable"><span
+                            class="ant-pagination-total-text">共 50 条</span>
+                        <li title="上一页" class="ant-pagination-prev"><a></a></li>
+                        <li title="第一页" class="ant-pagination-item ant-pagination-item-1"><a>1</a></li>
+                        <li title="2" class="ant-pagination-item ant-pagination-item-2"><a>2</a></li>
+                        <li title="3" class="ant-pagination-item ant-pagination-item-3"><a>3</a></li>
+                        <li title="4" class="ant-pagination-item ant-pagination-item-4"><a>4</a></li>
+                        <li title="5" class="ant-pagination-item ant-pagination-item-5 ant-pagination-item-active">
+                            <a>5</a></li>
+                        <li title="下一页" class="ant-pagination-disabled ant-pagination-next"><a></a></li>
+                        <!-- react-empty: 435 --></ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!----------------------------------------------------------------右侧----------------------------------------------------------------->
+
+    <div class="ant-col-11 ant-col-offset-2">
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-extra"><a href="#">More</a></div>
+            <div class="ant-card-body">
+
+                <p class="tit">基本</p>
+                <ul class="ant-pagination " unselectable="unselectable">
+                    <li title="上一页" class="ant-pagination-disabled ant-pagination-prev"><a></a></li>
+                    <li title="第一页" class="ant-pagination-item ant-pagination-item-1 ant-pagination-item-active">
+                        <a>1</a>
+                    </li>
+                    <li title="2" class="ant-pagination-item ant-pagination-item-2"><a>2</a></li>
+                    <li title="3" class="ant-pagination-item ant-pagination-item-3"><a>3</a></li>
+                    <li title="4" class="ant-pagination-item ant-pagination-item-4"><a>4</a></li>
+                    <li title="5" class="ant-pagination-item ant-pagination-item-5"><a>5</a></li>
+                    <li title="向后 5 页" class="ant-pagination-jump-next"><a></a></li>
+                    <li title="最后一页: 50" class="ant-pagination-item ant-pagination-item-50"><a>50</a></li>
+                    <li title="下一页" class="ant-pagination-next"><a></a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-extra"><a href="#">More</a></div>
+            <div class="ant-card-body">
+
+                <p class="tit">跳转</p>
+                <ul class="ant-pagination " unselectable="unselectable">
+                    <li title="上一页" class="ant-pagination-prev"><a></a></li>
+                    <li title="第一页" class="ant-pagination-item ant-pagination-item-1"><a>1</a></li>
+                    <li title="2" class="ant-pagination-item ant-pagination-item-2 ant-pagination-item-active"><a>2</a>
+                    </li>
+                    <li title="3" class="ant-pagination-item ant-pagination-item-3"><a>3</a></li>
+                    <li title="4" class="ant-pagination-item ant-pagination-item-4"><a>4</a></li>
+                    <li title="5" class="ant-pagination-item ant-pagination-item-5"><a>5</a></li>
+                    <li title="向后 5 页" class="ant-pagination-jump-next"><a></a></li>
+                    <li title="最后一页: 50" class="ant-pagination-item ant-pagination-item-50"><a>50</a></li>
+                    <li title="下一页" class="ant-pagination-next"><a></a></li>
+                    <div class="ant-pagination-options">
+                        <div class="ant-pagination-options-quick-jumper"><!-- react-text: 533 -->跳至
+                            <!-- /react-text --><input type="text"><!-- react-text: 535 -->页<!-- /react-text --></div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-extra"><a href="#">More</a></div>
+            <div class="ant-card-body">
+
+                <p class="tit">简洁</p>
+                <ul class="ant-pagination ant-pagination-simple ">
+                    <li title="上一页" class="ant-pagination-prev"><a></a></li>
+                    <div title="4/5" class="ant-pagination-simple-pager"><input type="text"><span
+                            class="ant-pagination-slash">／</span><!-- react-text: 555 -->5<!-- /react-text --></div>
+                    <li title="下一页" class="ant-pagination-next"><a></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="ant-card ant-card-bordered">
+            <div class="ant-card-extra"><a href="#">More</a></div>
+            <div class="ant-card-body">
+
+                <p class="tit">总数</p>
+                <ul class="ant-pagination " unselectable="unselectable"><span
+                        class="ant-pagination-total-text">共 80 条</span>
+                    <li title="上一页" class="ant-pagination-disabled ant-pagination-prev"><a></a></li>
+                    <li title="第一页" class="ant-pagination-item ant-pagination-item-1 ant-pagination-item-active">
+                        <a>1</a></li>
+                    <li title="2" class="ant-pagination-item ant-pagination-item-2"><a>2</a></li>
+                    <li title="3" class="ant-pagination-item ant-pagination-item-3"><a>3</a></li>
+                    <li title="4" class="ant-pagination-item ant-pagination-item-4"><a>4</a></li>
+                    <li title="下一页" class="ant-pagination-next"><a></a></li><!-- react-empty: 1191 --></ul>
+            </div>
+        </div>
+
+
+    </div>
+</div>
