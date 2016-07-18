@@ -69,7 +69,10 @@
 <body>
 <!-- app -->
 <div id="app">
-  <button id="show-modal" @click="show">Show Modal</button>
+  <div @click="show">
+    <button id="show-modal" >Show Modal</button>
+
+  </div>
   <!-- use the modal component, pass in the prop -->
   <modal :show.sync="showModal">
     <!--
@@ -136,6 +139,7 @@
     },
     methods:{
       show:function () {
+        console.log(11)
         this.showModal = true;
       }
     }

@@ -1,28 +1,28 @@
 {
-  "name": "vux",
-  "version": "0.1.2",
-  "description": "Mobile web UI based on Vue and Weui",
+  "name": "vud",
+  "version": "0.1.0",
+  "description": "web UI based on Vue and ant-design",
   "keywords": [
-    "vux",
+    "vud",
     "vue",
-    "weui",
-    "weex",
+    "ant",
+    "ant-design",
     "vue-components",
     "web-components",
     "component",
     "components",
-    "mobile ui",
+    "web ui",
     "framework",
     "frontend"
   ],
-  "author": "airyland <airyland@qq.com>",
+  "author": "阿磊 <313884212@qq.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/airyland/vux"
+    "url": "https://github.com/lileilei/Ant-design-vue"
   },
   "scripts": {
     "dev": "node build/dev-server.js",
-    "build": "rimraf site && webpack --progress --hide-modules --colors --config build/webpack.prod.conf.js && cd site/static && mkdir vendors && cd ../../ && cp -r src/assets/* site/static/ && cp CNAME site/ && cp favicon.ico site/",
+    "build": "rimraf site && webpack --progress --hide-modules --colors --config build/webpack.prod.conf.js && cd site/static && mkdir vendors && cd ../../ && cp -r src/assets/* site/static/ && cp favicon.ico site/",
     "test": "karma start build/karma.conf.js --single-run",
     "deploy": "gh-pages -d site",
     "xdeploy": "npm run build && gh-pages -d site",

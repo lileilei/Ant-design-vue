@@ -28,6 +28,7 @@
 }
 .ant-btn > .anticon {
   line-height: 1;
+  vertical-align: middle;
 }
 .ant-btn,
 .ant-btn:active,
