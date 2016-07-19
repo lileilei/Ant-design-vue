@@ -5,9 +5,6 @@
 </template>
 <script>
   export default {
-    created: function () {
-      console.log(this)
-    },
     attached: function () {
       let str = this.$el.textContent
       this.$el.innerHTML = require('markdown').parse(str)

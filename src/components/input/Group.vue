@@ -1,13 +1,16 @@
 <template>
-  <span class="ant-input-wrapper ant-input-group">
-    <span class="ant-input-group-addon">Http://</span>
-    <input type="text" class="ant-input" placeholder="{{ placeholder }}" v-model="value"
-           @blur="blur">
-    <span class="ant-input-group-addon">.com</span></span>
+  <span class="ant-input-group ant-search-input" :style="inputstyle">
+    <span class="ant-input-wrapper"><input type="text" placeholder="input search text" class="ant-input"></span>
+    <X-Input :value.sync="value"></X-Input>
+    <div class="ant-input-group-wrap"><slot></slot></div>
+  </span>
 </template>
 <script>
-
+  import XInput from './input.vue'
   export default {
+    components: {
+      XInput
+    },
     props: {
       placeholder: String,
       value: {
@@ -15,7 +18,11 @@
         default: '',
         twoWay: true
       },
-      name: String
+      name: String,
+      width:{
+        type:String,
+        default:'inherit'
+      }
     },
     methods: {
       blur () {
@@ -23,16 +30,10 @@
       }
     },
     computed: {
-      classes () {
-        return [
-          {
-            disabled: this.disabled,
-            'ant-btn-loading': this.loading
-          },
-          this.type ? `ant-btn-${this.type}` : '',
-          this.shape ? `ant-btn-${this.shape}` : '',
-          this.size ? `ant-btn-${this.size}` : ''
-        ]
+      inputstyle () {
+        return {
+          width:this.width
+        }
       }
     }
   }
