@@ -1,16 +1,18 @@
 <template>
   <div class="ant-checkbox-group">
-    <Check-Box v-for="item in items" :checked.sync='item.checked'>{{ item.text }}</Check-Box>
+    <Check-Box v-for="item in items" :checked.sync='item.checked' :disabled.sync="item.disabled" :value="item.value">{{
+      item.text }}
+    </Check-Box>
   </div>
 </template>
 <script>
   import CheckBox from './checkbox'
 
   export default {
-    props:{
+    props: {
       items: Array
     },
-    components:{
+    components: {
       CheckBox
     }
   }

@@ -1,34 +1,32 @@
 <template>
   <label class="ant-checkbox-wrapper">
-    <span class="ant-checkbox" :disabled="disabled" :class="classes" @click="select">
+    <span class="ant-checkbox"  :class="classes" @click="select">
       <span class="ant-checkbox-inner"></span>
-      <input type="checkbox" class="ant-checkbox-input">
+      <input type="checkbox" class="ant-checkbox-input" :checked="checked" :value="value" :name="name">
     </span><span><slot></slot></span>
   </label>
 </template>
 <script>
   export default {
     props: {
-      checked: {
-        type: [String, Boolean],
-        default: false
-      },
-      disabled: [String, Boolean],
-      value: String
+      checked: Boolean,
+      disabled: Boolean,
+      value: String,
+      name: String
     },
     computed: {
       classes () {
         return [
           {
-            'ant-checkbox-disabled': this.disabled === 'true' || this.disabled === true,
-            'ant-checkbox-checked': this.checked === 'true' || this.checked === true
+            'ant-checkbox-disabled': this.disabled,
+            'ant-checkbox-checked': this.checked
           }
         ]
       }
     },
     methods: {
       select: function () {
-        if (this.disabled !== 'true' && this.disabled !== true) {
+        if (!this.disabled) {
           this.checked = !this.checked
         }
       }
