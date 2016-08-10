@@ -1,21 +1,22 @@
 <template>
-  <figure class="highlight">
-    <slot></slot>
-  </figure>
+  <pre class="language-{{type}}"><code v-el:coder class="language-{{type}}"><slot></slot></code></pre>
 </template>
 <script>
+  import Prism from 'prismjs'
   export default {
+    props: {
+      type: {
+        default: 'html',
+        type: String
+      },
+      for: String
+    },
     attached: function () {
-      let str = this.$el.textContent
-      this.$el.innerHTML = require('markdown').parse(str)
+      let code = document.getElementById(this.for)
+      this.$els.coder.innerHTML = Prism.highlight(code.innerHTML.replace(/[\r\n]/, ''), Prism.languages[this.type])
     }
   }
 </script>
 <style lang="less">
-  .highlight {
-    border-radius: 6px;
-    background: #f7f7f7;
-    font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
-    padding: 1em;
-  }
+  @import './style/prism.css';
 </style>

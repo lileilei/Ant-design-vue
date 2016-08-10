@@ -3,8 +3,8 @@
   <h3>按钮类型</h3>
   <div class="ant-card ant-card-bordered">
     <div class="ant-card-body">
-      <X-Button>Default</X-Button>
-      <X-Button type="primary">Primary</X-Button>
+      <x-button>Default</x-button>
+      <x-button type="primary">Primary</x-button>
       <X-Button type="ghost">Default</X-Button>
       <X-Button type="dashed">Dashed</X-Button>
       <X-Button type="primary" icon="search" shape="circle"></X-Button>
@@ -36,8 +36,7 @@
   </div>
 </template>
 <script>
-  import { XButton, ButtonGroup } from '../components'
-
+  import {XButton, ButtonGroup} from '../components'
   export default {
     components: {
       XButton,

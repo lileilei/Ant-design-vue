@@ -1,12 +1,17 @@
 <template>
-  <span class="ant-switch" :class="classes" @click="check"><span class="ant-switch-inner">{{ text }}</span></span>
+  <span class="ant-switch" :class="classes" @click="check">
+    <span  class="ant-switch-inner">{{ str }}
+          <slot v-if="checked" name="open"></slot>
+          <slot v-if="!checked" name="close"></slot>
+    </span>
+  </span>
 </template>
 <script>
   export default {
     props: {
       id: String,
       checked: Boolean,
-      txt: String,
+      text: String,
       size: String,
       disabled: Boolean
     },
@@ -20,9 +25,9 @@
           this.size ? `ant-switch-${this.size === 'sm' && 'small'}` : ''
         ]
       },
-      text () {
-        if (this.txt) {
-          return (this.checked ? this.txt.slice(0, 1) : this.txt.slice(1))
+      str () {
+        if (this.text) {
+          return (this.checked ? this.text.slice(0, 1) : this.text.slice(1))
         }
       }
     },

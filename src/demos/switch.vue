@@ -5,7 +5,15 @@
       <div class="ant-card-body">
         <Switch size="sm"></Switch>
         <Switch disabled></Switch>
-        <Switch id="dog" txt="开关"></Switch>
+        <Switch id="dog" text="开关"></Switch>
+        <Switch>
+                <span slot="open">
+                  <i class="anticon anticon-check"></i>
+                </span>
+                <span slot="close">
+                  <i class="anticon anticon-cross"></i>
+                </span>
+        </Switch>
         <span style="margin-left: 20px;">{{ status | json }}</span>
       </div>
     </div>

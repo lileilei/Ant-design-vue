@@ -6,11 +6,11 @@ import Router from 'vue-router'
 import App from './App'
 
 import button from './demos/button'
-import icon from './demos/icon'
 import checkbox from './demos/checkbox'
 import input from './demos/input'
 import radio from './demos/radio'
 import Switch from './demos/switch'
+import select from './demos/select'
 
 Vue.use(Router)
 var router = new Router()
@@ -22,7 +22,9 @@ router.map({
     component: button
   },
   '/icon': {
-    component: icon
+    component: function (resolve) {
+      require(['./demos/icon.vue'], resolve)
+    }
   },
   '/checkbox': {
     component: checkbox
@@ -35,6 +37,19 @@ router.map({
   },
   '/switch': {
     component: Switch
+  },
+  '/select': {
+    component: select
+  },
+  '/layout': {
+    component: function (resolve) {
+      require(['./demos/layout.vue'], resolve)
+    }
+  },
+  '/menu': {
+    component: function (resolve) {
+      require(['./demos/menu.vue'], resolve)
+    }
   }
 })
 
