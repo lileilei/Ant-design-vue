@@ -1,3 +1,6 @@
+let closest = function (elem, fn) {
+  return elem && elem !== document && (fn(elem) ? true : closest(elem.parentNode, fn))
+}
 var affix = {
   getScroll: function (top) {
     var ret = window['page' + (top ? 'Y' : 'X') + 'Offset']
@@ -28,19 +31,14 @@ var affix = {
     }
   },
   closeByElement: function (target, elem) {
-    if (target === elem) {
-      return true
+    if (!(elem instanceof Array)) {
+      elem = [elem]
     }
-    let closest = function (parent) {
-      if (parent === elem) {
-        return true
-      }
-      if (parent === document || parent === document.body) {
-        return false
-      }
-      return closest(parent.parentNode)
-    }
-    return closest(target.parentNode, elem)
+    return closest(target, el => {
+      return elem.some(d => {
+        return el === d
+      })
+    })
   }
 }
 module.exports = affix

@@ -20,7 +20,7 @@
       </div>
       <span class="ant-select-arrow" style="-webkit-user-select: none;"><b></b></span></div>
     <X-Option v-if="!disabled" :stylus.sync="stylus" :disabled="disabled" :show.sync="selected" :options.sync="options"
-              :class="clazz" :multiple="multiple" :placeholder="placeholder"
+              :class="clazz" :multiple="multiple" :placeholder="placeholder" :notfound="notfound"
               :value="value" v-el:dropdownlist></X-Option>
   </div>
 </template>
@@ -64,7 +64,8 @@
       value_show: {
         type: Boolean,
         default: true
-      }
+      },
+      notfound: String
     },
     computed: {
       classes () {
@@ -118,7 +119,7 @@
         }
       },
       backdrop (e) {
-        if (!closeByElement(e.target, this.$els.select)) {
+        if (!closeByElement(e.target, [this.$els.select, this.$els.dropdownlist])) {
           this.selected = false
           if (this.placeholder) {
             this.placeholder_show = true

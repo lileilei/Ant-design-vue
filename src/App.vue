@@ -24,7 +24,7 @@
         </div>
         <div class="main-container ant-col-xs-24 ant-col-sm-24 ant-col-md-18 ant-col-lg-20">
           <div class="markdown">
-            <router-view keep-alive></router-view>
+            <router-view></router-view>
           </div>
         </div>
       </div>
@@ -45,7 +45,12 @@
   @import './components/style/index.less';
   @import './components/card/style/index.less';
   @import './components/layout/style/index.less';
-
+  .fade-transition {
+    transition: opacity .3s ease;
+  }
+  .fade-enter, .fade-leave {
+    opacity: 0;
+  }
   body {
     background: #ececec;
   }

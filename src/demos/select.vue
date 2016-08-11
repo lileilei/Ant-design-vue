@@ -20,7 +20,7 @@
         </X-Box>
         <!--- 带搜索框 --->
         <X-Box>
-          <X-Select placeholder="请选择人员" type="search" style="width: 120px;" :options="options"
+          <X-Select placeholder="请选择人员" notfound="无法找到" type="search" style="width: 120px;" :options="options"
                     :value.sync="people"></X-Select>
           <span slot="tit">带搜索框</span>
           <div slot="desc">展开后可对选项进行搜索。</div>
@@ -32,9 +32,9 @@
 
       <X-Col span="12" style="padding: 0 8px;">
         <X-Box>
-          <X-Select class="select-demo" size="lg" style="width: 150px;" :options="options" :value="value"></X-Select>
+          <X-Select class="select-demo" size="lg" style="width: 150px;" :options="options" :value.sync="value"></X-Select>
           <X-Select class="select-demo" style="width: 150px;" :options="options" :value.sync="value"></X-Select>
-          <X-Select class="select-demo" size="sm" style="width: 150px;" :options="options" :value="value"></X-Select>
+          <X-Select class="select-demo" size="sm" style="width: 150px;" :options="options" :value.sync="value"></X-Select>
           <span slot="tit">三种大小</span>
           <div slot="desc">三种大小的选择框，当 size 分别为 large 和 small 时，输入框高度为 32px 和 22px ，默认高度为 28px</div>
           <p slot="code">

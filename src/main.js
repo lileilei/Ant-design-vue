@@ -52,6 +52,8 @@ router.map({
     }
   }
 })
-
+router.afterEach(function (transition) {
+  console.log('成功浏览到: ' + transition.to.path)
+})
 router.start(App, '#app')
 

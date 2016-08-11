@@ -8,7 +8,7 @@
             style="-webkit-user-select: none;" @click="select($index)" v-for="item in options">{{ item.text }}
         </li>
         <li class="ant-select-dropdown-menu-item ant-select-dropdown-menu-item-disabled" v-if="options.length===0"
-            style="-webkit-user-select: none;">{{notFoundContent || '无匹配项'}}
+            style="-webkit-user-select: none;">{{notfound || '无匹配项'}}
         </li>
       </ul>
     </div>
@@ -33,7 +33,7 @@
       value: String,
       multiple: Boolean,
       placeholder: String,
-      notFoundContent: String
+      notfound: String
     },
     computed: {
       styles () {
